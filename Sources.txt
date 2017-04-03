@@ -1,0 +1,3 @@
+ServerDownClient:
+#Printer-Icon:	http://www.freeiconspng.com/icons/printer-icon
+#Email-Icon:	http://www.freeiconspng.com/icons/email-icon
