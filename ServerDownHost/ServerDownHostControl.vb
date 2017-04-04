@@ -1,8 +1,11 @@
-﻿Public Class ServerDownHostControl
+﻿Imports System.ServiceModel
+
+Public Class ServerDownHostControl
 
 #Region "Declarations"
     Private Shared instance As ServerDownHostControl = Nothing
     Private logIsOn As Boolean = False
+    Private logText As String()
 #End Region
 
 #Region "Singleton-Pattern"
@@ -10,7 +13,7 @@
 
     End Sub
     Public Shared Function GetInstance() As ServerDownHostControl
-        If instance.Equals(Nothing) Then
+        If instance Is Nothing Then
             instance = New ServerDownHostControl()
         End If
         Return instance
@@ -18,14 +21,27 @@
 #End Region
 
     Public Sub InitializeHost()
-        Throw New NotImplementedException("InitializeHost()")
+        'Throw New NotImplementedException("InitializeHost()")
         'Host with WCF
+        'Using sh As New ServiceHost(GetType(GetLog))
+        '    sh.Open()
+        '    Console.WriteLine("Service bereit...")
+        '    Console.ReadLine()
+        'End Using
+        'Dim sh As New ServiceHost(GetType(GetLog))
+        'sh.Open()
+        'Console.WriteLine("Service bereit...")
+        'Console.ReadLine()
     End Sub
 
     Public Sub CloseHost()
         Throw New NotImplementedException("CloseHost()")
         'Host with WCF
     End Sub
+
+    Public Function GetLogText() As String()
+        Return logText
+    End Function
 
 #Region "Logging"
     Public Sub SetLogState(Optional ByVal runOnce As Boolean = False, Optional ByVal isConsole As Boolean = False)

@@ -8,18 +8,22 @@
         Title="ServerDown Host" Height="350" Width="660" MinHeight="350" MinWidth="300" Icon="Resources/019.ico" Loaded="Window_Loaded">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="275*"/>
-            <ColumnDefinition Width="51*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="90"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition/>
+            <RowDefinition Height="25"/>
         </Grid.RowDefinitions>
         <ListBox x:Name="listBoxLog" Margin="10"/>
         <StackPanel Grid.Column="1">
-            <Button x:Name="buttonStart" Content="Start" Margin="10,10,10,10" MaxWidth="125" Height="33"/>
-            <Button x:Name="buttonStop" Content="Stop" Margin="10,10,10,10" MaxWidth="125" Height="33"/>
-            <Button x:Name="buttonTest" Content="Test" Margin="10,10,10,10" MaxWidth="125" Height="34"/>
-            <Button x:Name="buttonLog" Content="Log"  Margin="10,10,10,10" MaxWidth="125" Height="33"/>
+            <Button x:Name="buttonStart" Content="Start" Margin="10,10,10,5" MaxWidth="125" Height="33"/>
+            <Button x:Name="buttonStop" Content="Stop" Margin="10,5,10,5" MaxWidth="125" Height="33"/>
+            <Button x:Name="buttonTest" Content="Test" Margin="10,5,10,5" MaxWidth="125" Height="34"/>
+            <Button x:Name="buttonLog" Content="Log"  Margin="10,5,10,5" MaxWidth="125" Height="33"/>
         </StackPanel>
+        <StatusBar Margin="0,0,0,0" Grid.Row="1" Grid.ColumnSpan="2">
+            <StatusBarItem Name="statusBarItemMessage" Content="StatusBarItem" Margin="0"/>
+        </StatusBar>
     </Grid>
 </Window>
