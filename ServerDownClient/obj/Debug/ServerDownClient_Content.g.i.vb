@@ -11,6 +11,5 @@
 Option Strict Off
 Option Explicit On
 
-<Assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/email-icon-126.png"),  _
- Assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/printer-icon-986.png")> 
+<Assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("client.cs")> 
 

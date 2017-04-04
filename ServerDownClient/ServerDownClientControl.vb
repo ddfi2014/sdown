@@ -1,6 +1,7 @@
 ﻿Public Class ServerDownClientControl
 
 #Region "Declarations"
+    Private proxy As New GetLogClient()
     'Printersettings
 #End Region
 

@@ -4,7 +4,7 @@
 winexe
 VB
 .vb
-C:\Users\praktikant\Documents\Visual Studio 2015\Projects\DDosch\ServerDown1_5\ServerDown\ServerDownClient\obj\Debug\
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\DDosch\ServerDown1_5\ServerDown\ServerDownClient\obj\Release\
 ServerDownClient
 none
 false
@@ -12,9 +12,9 @@ false
 C:\Users\praktikant\Documents\Visual Studio 2015\Projects\DDosch\ServerDown1_5\ServerDown\ServerDownClient\Application.xaml
 11151548125
 
-81563238865
-11-1654899353
+82121594885
+10-285637309
 MainWindow.xaml;
 
-False
+True
 
