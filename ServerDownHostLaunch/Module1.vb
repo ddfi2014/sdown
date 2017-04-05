@@ -38,17 +38,16 @@ Module Module1
     End Sub
 
     Private Sub StartHost()
-        'ServerDownHost.ServerDownHostControl.GetInstance().InitializeHost()
-        'GetLog_Service.StartService.Start()
+        ServerDownHost.ServerDownHostControl.GetInstance().InitializeHost()
     End Sub
 
     Private Sub ShowHelp()
-        Throw New NotImplementedException()
+        Throw New NotImplementedException("ShowHelp()")
         'Explanation of Parameters, etc.
     End Sub
 
     Private Sub TestLog()
-        ServerDownHost.ServerDownHostControl.GetInstance.SetLogState(runOnce:=True)
+        ServerDownHost.ServerDownHostControl.GetInstance().SetLogState(runOnce:=True, isConsole:=True)
     End Sub
 #End Region
 
