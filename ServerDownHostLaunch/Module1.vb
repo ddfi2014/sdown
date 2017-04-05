@@ -1,4 +1,6 @@
 ﻿
+Imports System.ServiceModel
+
 Module Module1
 
 #Region "Main"
@@ -12,13 +14,13 @@ Module Module1
         Else
             For Each item As String In lArgs
                 Select Case item.ToLower()
-                    Case "/?" Or "-?" Or "-h"
+                    Case "/?", "-?", "-h"
                         ShowHelp()
-                    Case "/s" Or "-s" Or "--start"
+                    Case "/s", "-s", "--start"
                         StartHost()
-                    Case "/l" Or "-l" Or "--log"
+                    Case "/l", "-l", "--log"
                         SetLog()
-                    Case "/t" Or "-t" Or "--test"
+                    Case "/t", "-t", "--test"
                         TestLog()
                     Case Else
                         Console.WriteLine("Invalid Argument. List of possible arguments:")
@@ -36,7 +38,8 @@ Module Module1
     End Sub
 
     Private Sub StartHost()
-        ServerDownHost.ServerDownHostControl.GetInstance().InitializeHost()
+        'ServerDownHost.ServerDownHostControl.GetInstance().InitializeHost()
+        'GetLog_Service.StartService.Start()
     End Sub
 
     Private Sub ShowHelp()
