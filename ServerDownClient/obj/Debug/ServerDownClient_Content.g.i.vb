@@ -11,5 +11,5 @@
 Option Strict Off
 Option Explicit On
 
-<Assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("client.cs")> 
+<Assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/019.ico")> 
 

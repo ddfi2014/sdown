@@ -1,30 +1,30 @@
 ﻿Class MainWindow
 
 #Region "Declarations"
-    Dim control As New ServerDownClientControl()
-#End Region
-
-#Region "Functionality"
-    Private Sub PrintLog(Optional ByVal isQuickPrint As Boolean = False)
-        If isQuickPrint Then
-            control.Print(isQuickPrint)
-        Else
-            control.Print()
-        End If
-    End Sub
+    Dim control As ServerDownClientControl = Nothing
 #End Region
 
 #Region "Events"
-    Private Sub buttonPrintLog_Click(sender As Object, e As RoutedEventArgs) Handles buttonPrintLog.Click
-        PrintLog(isQuickPrint:=True)
-    End Sub
-
-    Private Sub menuItemOptionsPrint_Click(sender As Object, e As RoutedEventArgs) Handles menuItemOptionsPrint.Click
-        PrintLog(isQuickPrint:=True)
+    Private Sub printLog_Click(sender As Object, e As RoutedEventArgs) Handles buttonPrintLog.Click, menuItemOptionsPrint.Click
+        'custom printjob
+        control.Print(isQuickPrint:=True)
     End Sub
 
     Private Sub menuItemOptionsPrintDialog_Click(sender As Object, e As RoutedEventArgs) Handles menuItemOptionsPrintDialog.Click
-        PrintLog()
+        'default printjob
+        control.Print()
+    End Sub
+
+    Private Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
+        control = New ServerDownClientControl(Me)
+    End Sub
+
+    Private Sub buttonTest_Click(sender As Object, e As RoutedEventArgs) Handles buttonTest.Click
+        control.GetTextLog()
+    End Sub
+
+    Private Sub Window_Closing(sender As Object, e As ComponentModel.CancelEventArgs)
+        control.StopTimer()
     End Sub
 #End Region
 

@@ -5,16 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ServerDownClient"
         mc:Ignorable="d"
-        Title="ServerDown Client" Height="350" Width="525" MinHeight="200" MinWidth="300">
+        Title="ServerDown Client" Height="350" Width="525" MinHeight="250" MinWidth="350" Icon="Resources/019.ico" Loaded="Window_Loaded" Closing="Window_Closing">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="229*"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition/>
+            <RowDefinition Height="25"/>
         </Grid.RowDefinitions>
         <Menu x:Name="menu">
             <MenuItem Name="menuItemOptions" Header="Options">
-                <MenuItem Name="menuItemOptionsPrint" Header="Print"/>
-                <MenuItem Name="menuItemOptionsPrintDialog" Header="Print..."/>
+                <MenuItem Name="menuItemOptionsPrintDialog" Header="Print ..."/>
+                <MenuItem Name="menuItemOptionsPrint" Header="Print now"/>
             </MenuItem>
         </Menu>
         <Grid Margin="0" Grid.Row="1">
@@ -24,10 +25,17 @@
             </Grid.ColumnDefinitions>
             <ListBox x:Name="listBoxLog" Margin="10"/>
             <StackPanel Grid.Column="1">
-                <Button x:Name="buttonPrintLog" Margin="10,10,10,10">
+                <Button x:Name="buttonPrintLog" Margin="10,10,10,5" Cursor="Hand">
                     <Image Source="Resources/printer-icon-986.png" Margin="5"/>
                 </Button>
+                <Button x:Name="buttonMailLog" Margin="10,5,10,5">
+                    <Image Source="Resources/email-icon-126.png"/>
+                </Button>
+                <Button x:Name="buttonTest" Content="Test" Margin="10,5,10,5"/>
             </StackPanel>
         </Grid>
+        <StatusBar Margin="0" Grid.Row="2">
+            <StatusBarItem Name="statusBarItemMessage" Content="StatusBarItem" Margin="0"/>
+        </StatusBar>
     </Grid>
 </Window>
