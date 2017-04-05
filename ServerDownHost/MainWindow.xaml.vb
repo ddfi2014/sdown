@@ -8,6 +8,8 @@
     Private Sub SetControl()
         Try
             control = ServerDownHostControl.GetInstance()
+            ServerDownHostControl.AddView(Me)
+            control.InitializeWindow()
         Catch ex As Exception
             Console.WriteLine("ERROR: Couldn't set control to ServerDownHostControl.")
             Close()

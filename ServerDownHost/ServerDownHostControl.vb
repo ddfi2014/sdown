@@ -4,6 +4,7 @@ Public Class ServerDownHostControl
 
 #Region "Declarations"
     Private Shared instance As ServerDownHostControl = Nothing
+    Private Shared listViews As List(Of MainWindow) = Nothing
     Private logIsOn As Boolean = False
     Private logText As String()
 #End Region
@@ -15,10 +16,21 @@ Public Class ServerDownHostControl
     Public Shared Function GetInstance() As ServerDownHostControl
         If instance Is Nothing Then
             instance = New ServerDownHostControl()
+            listViews = New List(Of MainWindow)()
         End If
         Return instance
     End Function
 #End Region
+
+    Public Shared Sub AddView(ByRef view As MainWindow)
+        listViews.Add(view)
+    End Sub
+
+    Public Sub InitializeWindow()
+        For Each view In listViews
+            view.statusBarItemMessage.Content = ""
+        Next
+    End Sub
 
     Public Sub InitializeHost()
         'Throw New NotImplementedException("InitializeHost()")
