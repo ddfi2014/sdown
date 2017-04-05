@@ -17,10 +17,11 @@
         </Grid.RowDefinitions>
         <ListBox x:Name="listBoxLog" Margin="10"/>
         <StackPanel Grid.Column="1">
-            <Button x:Name="buttonStart" Content="Start" Margin="10,10,10,5" MaxWidth="125" Height="33"/>
-            <Button x:Name="buttonStop" Content="Stop" Margin="10,5,10,5" MaxWidth="125" Height="33"/>
-            <Button x:Name="buttonTest" Content="Test" Margin="10,5,10,5" MaxWidth="125" Height="34"/>
-            <Button x:Name="buttonLog" Content="Log"  Margin="10,5,10,5" MaxWidth="125" Height="33"/>
+            <Button x:Name="buttonStart" Content="Start" Margin="10,10,10,5" Height="32"/>
+            <Button x:Name="buttonStop" Content="Stop" Margin="10,5,10,5" Height="32"/>
+            <Button x:Name="buttonTest" Content="Test" Margin="10,5,10,5" Height="32"/>
+            <Button x:Name="buttonLog" Content="Log"  Margin="10,5,10,5" Height="32"/>
+            <Button x:Name="buttonDummyLog" Content="DUMMY" Margin="10,5,10,5"/>
         </StackPanel>
         <StatusBar Margin="0,0,0,0" Grid.Row="1" Grid.ColumnSpan="2">
             <StatusBarItem Name="statusBarItemMessage" Content="StatusBarItem" Margin="0"/>

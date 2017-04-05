@@ -1,7 +1,7 @@
 ﻿Public Class MainWindow
 
 #Region "Declarations"
-    Private control As ServerDownHostControl
+    Private control As ServerDownHostControl = Nothing
 #End Region
 
 #Region "Initialization"
@@ -9,7 +9,7 @@
         Try
             control = ServerDownHostControl.GetInstance()
             ServerDownHostControl.AddView(Me)
-            control.InitializeWindow()
+            'control.InitializeWindow()
         Catch ex As Exception
             Console.WriteLine("ERROR: Couldn't set control to ServerDownHostControl.")
             Close()
@@ -17,33 +17,17 @@
     End Sub
 #End Region
 
-#Region "Functionality"
-    Private Sub StartHost()
-        control.InitializeHost()
-    End Sub
-
-    Private Sub StopHost()
-        control.CloseHost()
-    End Sub
-
-    Private Sub TestHost()
-        control.InitializeHost()
-        control.SetLogState(runOnce:=True)
-        control.CloseHost()
-    End Sub
-#End Region
-
 #Region "Events"
     Private Sub buttonStart_Click(sender As Object, e As RoutedEventArgs) Handles buttonStart.Click
-        StartHost()
+        control.InitializeHost()
     End Sub
 
     Private Sub buttonStop_Click(sender As Object, e As RoutedEventArgs) Handles buttonStop.Click
-        StopHost()
+        control.CloseHost()
     End Sub
 
     Private Sub buttonTest_Click(sender As Object, e As RoutedEventArgs) Handles buttonTest.Click
-        TestHost()
+        control.TestHost()
     End Sub
 
     Private Sub buttonLog_Click(sender As Object, e As RoutedEventArgs) Handles buttonLog.Click
@@ -52,6 +36,10 @@
 
     Private Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
         SetControl()
+    End Sub
+
+    Private Sub buttonDummyLog_Click(sender As Object, e As RoutedEventArgs) Handles buttonDummyLog.Click
+        control.CreateDummyLog()
     End Sub
 #End Region
 

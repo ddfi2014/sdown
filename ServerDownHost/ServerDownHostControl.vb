@@ -3,10 +3,11 @@
 Public Class ServerDownHostControl
 
 #Region "Declarations"
+    Private sh As ServiceHost
     Private Shared instance As ServerDownHostControl = Nothing
     Private Shared listViews As List(Of MainWindow) = Nothing
     Private logIsOn As Boolean = False
-    Private logText As String()
+    Private logText As New List(Of String)
 #End Region
 
 #Region "Singleton-Pattern"
@@ -22,38 +23,73 @@ Public Class ServerDownHostControl
     End Function
 #End Region
 
+#Region "Control"
     Public Shared Sub AddView(ByRef view As MainWindow)
         listViews.Add(view)
+        GetInstance().InitializeWindow()
     End Sub
 
     Public Sub InitializeWindow()
         For Each view In listViews
+            view.listBoxLog.Items.Clear()
             view.statusBarItemMessage.Content = ""
+        Next
+    End Sub
+
+    Private Sub SetHostState(message As String)
+        For Each view In listViews
+            view.statusBarItemMessage.Content = message
         Next
     End Sub
 
     Public Sub InitializeHost()
         'Throw New NotImplementedException("InitializeHost()")
         'Host with WCF
-        'Using sh As New ServiceHost(GetType(GetLog))
-        '    sh.Open()
-        '    Console.WriteLine("Service bereit...")
-        '    Console.ReadLine()
-        'End Using
-        'Dim sh As New ServiceHost(GetType(GetLog))
-        'sh.Open()
-        'Console.WriteLine("Service bereit...")
-        'Console.ReadLine()
+        ''Using sh As New ServiceHost(GetType(GetLog))
+        ''    sh.Open()
+        ''    Console.WriteLine("Service bereit...")
+        ''    Console.ReadLine()
+        ''End Using
+        sh = New ServiceHost(GetType(GetLog))
+        sh.Open()
+        SetHostState("Service ready.")
+        Console.WriteLine("Service ready.")
+        Console.ReadLine()
+    End Sub
+
+    Public Sub TestHost()
+        InitializeHost()
+        SetLogState(runOnce:=True)
+        CloseHost()
     End Sub
 
     Public Sub CloseHost()
-        Throw New NotImplementedException("CloseHost()")
+        'Throw New NotImplementedException("CloseHost()")
         'Host with WCF
+        Try
+            sh.Close()
+            SetHostState("Service stopped.")
+        Catch ex As Exception
+            SetHostState("Error: Couldn't stop Service.")
+        End Try
     End Sub
 
+#Region "LogTest"
+    Public Sub CreateDummyLog()
+        logText.Add("This is a test.")
+        For Each view In listViews
+            view.listBoxLog.Items.Clear()
+            For Each item In logText
+                view.listBoxLog.Items.Add(item)
+            Next
+        Next
+    End Sub
+#End Region
+
     Public Function GetLogText() As String()
-        Return logText
+        Return logText.ToArray()
     End Function
+#End Region
 
 #Region "Logging"
     Public Sub SetLogState(Optional ByVal runOnce As Boolean = False, Optional ByVal isConsole As Boolean = False)
@@ -63,6 +99,7 @@ Public Class ServerDownHostControl
                 logIsOn = True
             Catch ex As Exception
                 Console.WriteLine(ex.StackTrace)
+                logIsOn = False
             End Try
         Else
             Try
@@ -70,6 +107,7 @@ Public Class ServerDownHostControl
                 logIsOn = False
             Catch ex As Exception
                 Console.WriteLine(ex.StackTrace)
+                logIsOn = True
             End Try
         End If
     End Sub
@@ -80,17 +118,21 @@ Public Class ServerDownHostControl
             If Not runOnce Then
                 Throw New NotImplementedException("runOnce = False; isConsole = True")
             Else
-                Dim reply As String
-                Console.WriteLine("Do you want to start a test? Y/N")
-                reply = Console.ReadLine()
-                If reply.ToLower().First().Equals("y") Or reply.ToLower().First().Equals("j") Then
-                    TestServers()
-                ElseIf reply.ToLower().First().Equals("n") Then
-                    Console.WriteLine("Test aborted.")
-                    Console.ReadLine()
-                Else
-                    Console.WriteLine("Invalid reply.")
-                End If
+                Throw New NotImplementedException("runOnce = True; isConsole = True")
+                'Dim reply As String
+                'Console.WriteLine("Do you want to start a test? Y/N")
+                'reply = Console.ReadLine()
+                'If reply.ToLower().First().Equals("y") Or reply.ToLower().First().Equals("j") Then
+                '    TestServers()
+                'ElseIf reply.ToLower().First().Equals("n") Then
+                '    Console.WriteLine("Test aborted.")
+                '    Console.ReadKey()
+                '    Throw New Exception("Test aborted.")
+                'Else
+                '    Console.WriteLine("Invalid reply.")
+                '    Console.ReadKey()
+                '    Throw New Exception("Invalid reply.")
+                'End If
             End If
 #End Region
         Else
