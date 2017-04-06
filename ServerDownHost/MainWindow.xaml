@@ -23,8 +23,8 @@
             <Button x:Name="buttonLog" Content="Log"  Margin="10,5,10,5" Height="32"/>
             <Button x:Name="buttonDummyLog" Content="DUMMY" Margin="10,5,10,5"/>
         </StackPanel>
-        <StatusBar Margin="0,0,0,0" Grid.Row="1" Grid.ColumnSpan="2">
-            <StatusBarItem Name="statusBarItemMessage" Content="StatusBarItem" Margin="0"/>
+        <StatusBar Grid.Row="1" Grid.ColumnSpan="2">
+            <StatusBarItem Name="statusBarItemMessage" Content="StatusBarItem"/>
         </StatusBar>
     </Grid>
 </Window>

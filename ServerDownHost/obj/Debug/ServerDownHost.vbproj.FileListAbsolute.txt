@@ -28,4 +28,3 @@ C:\Users\praktikant\Documents\Visual Studio 2015\Projects\DDosch\ServerDown1_5\S
 C:\Users\praktikant\Documents\Visual Studio 2015\Projects\DDosch\ServerDown1_5\ServerDown\ServerDownHost\obj\Debug\ServerDownHost.Resources.resources
 C:\Users\praktikant\Documents\Visual Studio 2015\Projects\DDosch\ServerDown1_5\ServerDown\ServerDownHost\obj\Debug\ServerDownHost.vbproj.GenerateResource.Cache
 C:\Users\praktikant\Documents\Visual Studio 2015\Projects\DDosch\ServerDown1_5\ServerDown\ServerDownHost\bin\Debug\ServerDownHost.exe.config
-C:\Users\praktikant\Documents\Visual Studio 2015\Projects\DDosch\ServerDown1_5\ServerDown\ServerDownHost\obj\Debug\ServerDownHost.vbprojResolveAssemblyReference.cache

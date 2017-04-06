@@ -43,6 +43,7 @@ Public Class ServerDownHostControl
     End Sub
 
     Public Sub InitializeHost()
+#Region "Fallback"
         'Throw New NotImplementedException("InitializeHost()")
         'Host with WCF
         ''Using sh As New ServiceHost(GetType(GetLog))
@@ -50,6 +51,7 @@ Public Class ServerDownHostControl
         ''    Console.WriteLine("Service bereit...")
         ''    Console.ReadLine()
         ''End Using
+#End Region
         sh = New ServiceHost(GetType(GetLog))
         sh.Open()
         SetHostState("Service ready.")
@@ -64,8 +66,6 @@ Public Class ServerDownHostControl
     End Sub
 
     Public Sub CloseHost()
-        'Throw New NotImplementedException("CloseHost()")
-        'Host with WCF
         Try
             sh.Close()
             SetHostState("Service stopped.")
@@ -139,6 +139,7 @@ Public Class ServerDownHostControl
 #Region "isConsole = False"
             If Not runOnce Then
                 Throw New NotImplementedException("runOnce = False; isConsole = False")
+                'Timer: Interval of >5min
             Else
                 Dim result As MessageBoxResult = MessageBox.Show("Do you want to start a test?", "Logging Test", MessageBoxButton.YesNo, MessageBoxImage.Question, MessageBoxResult.Cancel)
                 If result.Equals(MessageBoxResult.Yes) Then
