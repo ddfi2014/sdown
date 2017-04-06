@@ -1,22 +1,16 @@
 ﻿Class MainWindow
 
 #Region "Declarations"
-    Dim control As ServerDownClientControl = Nothing
+    Dim control As ServerDownClientControl
 #End Region
 
 #Region "Events"
-    Private Sub printLog_Click(sender As Object, e As RoutedEventArgs) Handles buttonPrintLog.Click, menuItemOptionsPrint.Click
-        'custom printjob
-        control.Print(isQuickPrint:=True)
-    End Sub
-
-    Private Sub menuItemOptionsPrintDialog_Click(sender As Object, e As RoutedEventArgs) Handles menuItemOptionsPrintDialog.Click
-        'default printjob
-        control.Print()
-    End Sub
-
     Private Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
         control = New ServerDownClientControl(Me)
+    End Sub
+
+    Private Sub buttonSaveLog_Click(sender As Object, e As RoutedEventArgs) Handles buttonSaveLog.Click
+        control.Save()
     End Sub
 
     Private Sub buttonTest_Click(sender As Object, e As RoutedEventArgs) Handles buttonTest.Click

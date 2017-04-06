@@ -13,4 +13,3 @@ C:\Users\praktikant\Documents\Visual Studio 2015\Projects\DDosch\ServerDown1_5\S
 C:\Users\praktikant\Documents\Visual Studio 2015\Projects\DDosch\ServerDown1_5\ServerDown\ServerDownClient\obj\Debug\ServerDownClient.xml
 C:\Users\praktikant\Documents\Visual Studio 2015\Projects\DDosch\ServerDown1_5\ServerDown\ServerDownClient\obj\Debug\ServerDownClient.pdb
 C:\Users\praktikant\Documents\Visual Studio 2015\Projects\DDosch\ServerDown1_5\ServerDown\ServerDownClient\bin\Debug\ServerDownClient.exe.config
-C:\Users\praktikant\Documents\Visual Studio 2015\Projects\DDosch\ServerDown1_5\ServerDown\ServerDownClient\obj\Debug\ServerDownClient.vbprojResolveAssemblyReference.cache

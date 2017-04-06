@@ -6,6 +6,39 @@ ServerDownClient
 </name>
 </assembly>
 <members>
+<member name="M:ServerDownClient.ServerDownClientControl.GetTextLog">
+ <summary>
+ Obtains the server's log.
+ </summary>
+</member>
+<member name="M:ServerDownClient.ServerDownClientControl.Save">
+ <summary>
+ Saves a logfile in the same directory from which the program is being run from.
+ </summary>
+</member>
+<member name="M:ServerDownClient.ServerDownClientControl.SaveAs(System.String)">
+ <summary>
+ Saves a logfile under the specified path.
+ </summary>
+ <param name="filePath">The path that refers to the location of the file and its name.
+ <para>Example: <c>C:\...\filename.txt</c></para></param>
+</member>
+<member name="M:ServerDownClient.ServerDownClientControl.GetCustomDateTimeString">
+ <summary>
+ Creates the current date as a string.
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:ServerDownClient.ServerDownClientControl.StartTimer">
+ <summary>
+ Starts the timer that the server's log at the set interval.
+ </summary>
+</member>
+<member name="M:ServerDownClient.ServerDownClientControl.StopTimer">
+ <summary>
+ Stops the timer.
+ </summary>
+</member>
 <member name="T:ServerDownClient.Application">
 <summary>
 Application

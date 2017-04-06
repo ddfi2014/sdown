@@ -1,4 +1,5 @@
-﻿Imports System.Threading.Tasks
+﻿Imports System.IO
+Imports System.Threading.Tasks
 Imports System.Timers
 
 Public Class ServerDownClientControl
@@ -9,19 +10,27 @@ Public Class ServerDownClientControl
     Public serverLog As String()
     Private timer As Timers.Timer
     Private Const interval As Double = 1000 * 15
-    'Printersettings
 #End Region
 
 #Region "Instance"
     Public Sub New()
-        timer = New Timers.Timer(interval)
-        AddHandler timer.Elapsed, AddressOf OnTimedEvent
-        timer.AutoReset = True
-        timer.Start()
+#Region "Fallback"
+        'timer = New Timers.Timer(interval)
+        'AddHandler timer.Elapsed, AddressOf OnTimedEvent
+        'timer.AutoReset = True
+        'timer.Start()
+#End Region
+        StartTimer()
     End Sub
 
     Public Sub New(clientView As MainWindow)
         Me.New()
+#Region "Fallback"
+        'timer = New Timers.Timer(interval)
+        'AddHandler timer.Elapsed, AddressOf OnTimedEvent
+        'timer.AutoReset = True
+        'timer.Start()
+#End Region
         Me.clientView = clientView
         InitializeWindow()
     End Sub
@@ -34,29 +43,9 @@ Public Class ServerDownClientControl
         clientView.statusBarItemMessage.Content = ""
     End Sub
 
-    Public Sub Print(Optional ByVal isQuickPrint As Boolean = False)
-        If isQuickPrint Then
-            PrintNow()
-        Else
-            PrintComplex()
-        End If
-    End Sub
-
-    Private Sub PrintNow()
-        Throw New NotImplementedException("before complex: default; after complex: Save Printersettings")
-    End Sub
-
-    Private Sub PrintComplex()
-        Dim printDialog As New PrintDialog()
-        printDialog.PageRangeSelection = PageRangeSelection.AllPages
-        printDialog.UserPageRangeEnabled = True
-
-        Dim print As Boolean? = printDialog.ShowDialog()
-        If print Then
-
-        End If
-    End Sub
-
+    ''' <summary>
+    ''' Obtains the server's log.
+    ''' </summary>
     Public Sub GetTextLog()
         Try
             serverLog = proxy.GetServerLog()
@@ -66,8 +55,71 @@ Public Class ServerDownClientControl
         End Try
     End Sub
 
+    ''' <summary>
+    ''' Saves a logfile in the same directory from which the program is being run from.
+    ''' </summary>
+    Public Sub Save()
+        Dim defaultSavePath As String = GetDefaultSavePath()
+        Using sw As New StreamWriter(defaultSavePath, False, Text.Encoding.UTF8)
+            For Each line In serverLog
+                sw.WriteLine(line)
+            Next
+            sw.Flush()
+            sw.Close()
+        End Using
+        clientView.statusBarItemMessage.Content = "Log saved as: " & defaultSavePath & "."
+    End Sub
+
+    ''' <summary>
+    ''' Saves a logfile under the specified path.
+    ''' </summary>
+    ''' <param name="filePath">The path that refers to the location of the file and its name.
+    ''' <para>Example: <c>C:\...\filename.txt</c></para></param>
+    Public Sub SaveAs(filePath As String)
+
+    End Sub
+
+    Private Function GetDefaultSavePath() As String
+        Dim defaultSavePath As String = Path.GetFullPath("log_" + GetCustomDateTimeString() + ".txt")
+        Return defaultSavePath
+    End Function
+
+    ''' <summary>
+    ''' Creates the current date as a string.
+    ''' </summary>
+    ''' <returns></returns>
+    Private Function GetCustomDateTimeString() As String
+        Dim dateString As String
+        With DateTime.Now
+            'dateString = .Year & .Month & .Day & "_" & .Hour & .Minute & .Second
+            dateString = .ToString("yyyyMMdd_HHmmss")
+        End With
+        Return dateString
+    End Function
+#End Region
+
+#Region "Timer"
+    ''' <summary>
+    ''' Starts the timer that the server's log at the set interval.
+    ''' </summary>
+    Private Sub StartTimer()
+        timer = New Timers.Timer(interval)
+        AddHandler timer.Elapsed, AddressOf OnTimedEvent
+        timer.AutoReset = True
+        timer.Start()
+    End Sub
+
+    ''' <summary>
+    ''' Stops the timer.
+    ''' </summary>
     Public Sub StopTimer()
         timer.Stop()
+    End Sub
+#End Region
+
+#Region "Delegates"
+    Public Sub UpdateList()
+        clientView.listBoxLog.ItemsSource = serverLog
     End Sub
 #End Region
 
@@ -77,7 +129,4 @@ Public Class ServerDownClientControl
     End Sub
 #End Region
 
-    Public Sub UpdateList()
-        clientView.listBoxLog.ItemsSource = serverLog
-    End Sub
 End Class

@@ -13,10 +13,7 @@
             <RowDefinition Height="25"/>
         </Grid.RowDefinitions>
         <Menu x:Name="menu">
-            <MenuItem Name="menuItemOptions" Header="Options">
-                <MenuItem Name="menuItemOptionsPrintDialog" Header="Print ..."/>
-                <MenuItem Name="menuItemOptionsPrint" Header="Print now"/>
-            </MenuItem>
+            <MenuItem Name="menuItemOptions" Header="Options"/>
         </Menu>
         <Grid Margin="0" Grid.Row="1">
             <Grid.ColumnDefinitions>
@@ -25,8 +22,8 @@
             </Grid.ColumnDefinitions>
             <ListBox x:Name="listBoxLog" Margin="10"/>
             <StackPanel Grid.Column="1">
-                <Button x:Name="buttonPrintLog" Margin="10,10,10,5" Cursor="Hand">
-                    <Image Source="Resources/printer-icon-986.png" Margin="5"/>
+                <Button x:Name="buttonSaveLog" Margin="10,10,10,5" Cursor="Hand">
+                    <Image Source="Resources/save-icon-5404.png" Margin="5"/>
                 </Button>
                 <Button x:Name="buttonMailLog" Margin="10,5,10,5">
                     <Image Source="Resources/email-icon-126.png"/>

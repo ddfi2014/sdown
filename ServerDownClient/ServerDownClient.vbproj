@@ -48,7 +48,9 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ReachFramework" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Printing" />
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -132,13 +134,15 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\email-icon-126.png" />
-    <Resource Include="Resources\printer-icon-986.png" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\019.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\save-icon-5404.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
