@@ -1,6 +1,7 @@
 ﻿
 Imports System.ServiceModel
 
+<Obsolete()>
 Module Module1
 
 #Region "Main"
