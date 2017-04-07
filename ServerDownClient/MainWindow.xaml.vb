@@ -9,8 +9,12 @@
         control = New ServerDownClientControl(Me)
     End Sub
 
-    Private Sub buttonSaveLog_Click(sender As Object, e As RoutedEventArgs) Handles buttonSaveLog.Click
+    Private Sub SaveLog_Click(sender As Object, e As RoutedEventArgs) Handles buttonSaveLog.Click, menuItemOptionsSave.Click
         control.Save()
+    End Sub
+
+    Private Sub SaveLogAs_Click(sender As Object, e As RoutedEventArgs) Handles menuItemOptionsSaveAs.Click
+        control.SaveAs()
     End Sub
 
     Private Sub buttonTest_Click(sender As Object, e As RoutedEventArgs) Handles buttonTest.Click

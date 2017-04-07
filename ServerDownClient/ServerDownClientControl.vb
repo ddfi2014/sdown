@@ -70,6 +70,10 @@ Public Class ServerDownClientControl
         clientView.statusBarItemMessage.Content = "Log saved as: " & defaultSavePath & "."
     End Sub
 
+    Public Sub SaveAs()
+
+    End Sub
+
     ''' <summary>
     ''' Saves a logfile under the specified path.
     ''' </summary>
@@ -89,12 +93,8 @@ Public Class ServerDownClientControl
     ''' </summary>
     ''' <returns></returns>
     Private Function GetCustomDateTimeString() As String
-        Dim dateString As String
-        With DateTime.Now
-            'dateString = .Year & .Month & .Day & "_" & .Hour & .Minute & .Second
-            dateString = .ToString("yyyyMMdd_HHmmss")
-        End With
-        Return dateString
+        'Dim dateString As String = DateTime.Now.ToString("yyyyMMdd_HHmmss")
+        Return DateTime.Now.ToString("yyyyMMdd_HHmmss")
     End Function
 #End Region
 
