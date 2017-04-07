@@ -72,6 +72,7 @@
     <Compile Include="GetLog.vb" />
     <Compile Include="IGetLog.vb" />
     <Compile Include="ServerDownHostControl.vb" />
+    <Compile Include="ServerTest.vb" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

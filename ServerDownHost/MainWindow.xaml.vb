@@ -26,10 +26,6 @@
         control.CloseHost()
     End Sub
 
-    Private Sub buttonTest_Click(sender As Object, e As RoutedEventArgs) Handles buttonTest.Click
-        control.TestHost()
-    End Sub
-
     Private Sub buttonLog_Click(sender As Object, e As RoutedEventArgs) Handles buttonLog.Click
         control.SetLogState()
     End Sub

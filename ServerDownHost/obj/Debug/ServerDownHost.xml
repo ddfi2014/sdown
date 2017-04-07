@@ -6,6 +6,69 @@ ServerDownHost
 </name>
 </assembly>
 <members>
+<member name="M:ServerDownHost.ServerDownHostControl.AddView(ServerDownHost.MainWindow@)">
+ <summary>
+ Adds a view to the list of controlled views.
+ </summary>
+ <param name="view"></param>
+</member>
+<member name="M:ServerDownHost.ServerDownHostControl.InitializeWindow">
+ <summary>
+ Initializes all views.
+ </summary>
+</member>
+<member name="M:ServerDownHost.ServerDownHostControl.UpdateListBoxPosition(System.Windows.Controls.ListBox)">
+ <summary>
+ Updates the listBox's position to show the most recent entry.
+ </summary>
+ <param name="listbox"></param>
+</member>
+<member name="M:ServerDownHost.ServerDownHostControl.SetHostState(System.String)">
+ <summary>
+ Sets the host's state in the statusbars of all views.
+ </summary>
+ <param name="message"></param>
+</member>
+<member name="M:ServerDownHost.ServerDownHostControl.InitializeHost">
+ <summary>
+ Starts the hosting.
+ </summary>
+</member>
+<member name="M:ServerDownHost.ServerDownHostControl.CloseHost">
+ <summary>
+ Stops the hosting.
+ </summary>
+</member>
+<member name="M:ServerDownHost.ServerDownHostControl.SetLogState(System.Boolean,System.Boolean)">
+ <summary>
+ Turns the Logging on when it is off and vice versa.
+ </summary>
+ <param name="runOnce"></param>
+ <param name="isConsole"></param>
+</member>
+<member name="M:ServerDownHost.ServerDownHostControl.StartLog(System.Boolean,System.Boolean)">
+ <summary>
+ Starts the logging process.
+ </summary>
+ <param name="runOnce"></param>
+ <param name="isConsole"></param>
+</member>
+<member name="M:ServerDownHost.ServerDownHostControl.TestServers">
+ <summary>
+ Tests, if the specified servers are running and updates the views.
+ </summary>
+</member>
+<member name="M:ServerDownHost.ServerDownHostControl.EndLog">
+ <summary>
+ Stops the logging process.
+ </summary>
+</member>
+<member name="M:ServerDownHost.ServerDownHostControl.UpdateListBox(ServerDownHost.MainWindow@)">
+ <summary>
+ Updates the view's listBox.
+ </summary>
+ <param name="view"></param>
+</member>
 <member name="T:ServerDownHost.Application">
 <summary>
 Application

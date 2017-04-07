@@ -19,7 +19,6 @@
         <StackPanel Grid.Column="1">
             <Button x:Name="buttonStart" Content="Start" Margin="10,10,10,5" Height="32"/>
             <Button x:Name="buttonStop" Content="Stop" Margin="10,5,10,5" Height="32"/>
-            <Button x:Name="buttonTest" Content="Test" Margin="10,5,10,5" Height="32"/>
             <Button x:Name="buttonLog" Content="Log"  Margin="10,5,10,5" Height="32"/>
             <Button x:Name="buttonDummyLog" Content="DUMMY" Margin="10,5,10,5"/>
         </StackPanel>
