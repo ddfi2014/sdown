@@ -1,6 +1,7 @@
 ﻿Imports System.IO
 Imports System.Threading.Tasks
 Imports System.Timers
+Imports Microsoft.Win32
 
 Public Class ServerDownClientControl
 
@@ -56,22 +57,44 @@ Public Class ServerDownClientControl
     End Sub
 
     ''' <summary>
-    ''' Saves a logfile in the same directory from which the program is being run from.
+    ''' Writes a file with the contents of the ListBox to the specified path.
     ''' </summary>
-    Public Sub Save()
-        Dim defaultSavePath As String = GetDefaultSavePath()
-        Using sw As New StreamWriter(defaultSavePath, False, Text.Encoding.UTF8)
+    ''' <param name="filePath"></param>
+    Private Sub WriteFile(filePath As String)
+        Using sw As New StreamWriter(filePath, False, Text.Encoding.UTF8)
             For Each line In serverLog
                 sw.WriteLine(line)
             Next
             sw.Flush()
             sw.Close()
         End Using
+    End Sub
+
+    ''' <summary>
+    ''' Saves a logfile in the same directory from which the program is being run from.
+    ''' </summary>
+    Public Sub Save()
+        Dim defaultSavePath As String = GetDefaultSavePath()
+        WriteFile(defaultSavePath)
         clientView.statusBarItemMessage.Content = "Log saved as: " & defaultSavePath & "."
     End Sub
 
+    ''' <summary>
+    ''' Opens a SaveFileDialog that allows the user to select the name and location of a new logfile.
+    ''' </summary>
     Public Sub SaveAs()
-
+        Dim fileDialog As New SaveFileDialog()
+        fileDialog.InitialDirectory = Path.GetFullPath(Directory.GetCurrentDirectory())
+        fileDialog.Filter = "Textdateien (*.txt, *.log)|*.txt;*.log|Alle Dateien (*.*)|*.*"
+        fileDialog.AddExtension = True
+        Try
+            If fileDialog.ShowDialog() Then
+                WriteFile(fileDialog.FileName)
+                clientView.statusBarItemMessage.Content = "Log saved as: " & fileDialog.FileName & "."
+            End If
+        Catch ex As Exception
+            clientView.statusBarItemMessage.Content = "Error: File could not be saved."
+        End Try
     End Sub
 
     ''' <summary>
@@ -80,7 +103,8 @@ Public Class ServerDownClientControl
     ''' <param name="filePath">The path that refers to the location of the file and its name.
     ''' <para>Example: <c>C:\...\filename.txt</c></para></param>
     Public Sub SaveAs(filePath As String)
-
+        WriteFile(filePath)
+        clientView.statusBarItemMessage.Content = "Log saved as: " & filePath & "."
     End Sub
 
     Private Function GetDefaultSavePath() As String

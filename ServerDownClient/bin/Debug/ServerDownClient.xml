@@ -11,9 +11,20 @@ ServerDownClient
  Obtains the server's log.
  </summary>
 </member>
+<member name="M:ServerDownClient.ServerDownClientControl.WriteFile(System.String)">
+ <summary>
+ Writes a file with the contents of the ListBox to the specified path.
+ </summary>
+ <param name="filePath"></param>
+</member>
 <member name="M:ServerDownClient.ServerDownClientControl.Save">
  <summary>
  Saves a logfile in the same directory from which the program is being run from.
+ </summary>
+</member>
+<member name="M:ServerDownClient.ServerDownClientControl.SaveAs">
+ <summary>
+ Opens a SaveFileDialog that allows the user to select the name and location of a new logfile.
  </summary>
 </member>
 <member name="M:ServerDownClient.ServerDownClientControl.SaveAs(System.String)">
