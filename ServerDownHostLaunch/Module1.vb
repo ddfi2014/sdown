@@ -35,7 +35,7 @@ Module Module1
 
 #Region "Functionality"
     Private Sub SetLog()
-        ServerDownHost.ServerDownHostControl.GetInstance().SetLogState()
+        ServerDownHost.ServerDownHostControl.GetInstance().ToggleLogState()
     End Sub
 
     Private Sub StartHost()
@@ -48,7 +48,7 @@ Module Module1
     End Sub
 
     Private Sub TestLog()
-        ServerDownHost.ServerDownHostControl.GetInstance().SetLogState(runOnce:=True, isConsole:=True)
+        ServerDownHost.ServerDownHostControl.GetInstance().ToggleLogState(runOnce:=True, isConsole:=True)
     End Sub
 #End Region
 
