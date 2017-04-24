@@ -69,8 +69,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="EHostType.vb" />
     <Compile Include="GetLog.vb" />
     <Compile Include="IGetLog.vb" />
+    <Compile Include="Server.vb" />
     <Compile Include="ServerDownHostControl.vb" />
     <Compile Include="ServerTest.vb" />
     <Page Include="MainWindow.xaml">

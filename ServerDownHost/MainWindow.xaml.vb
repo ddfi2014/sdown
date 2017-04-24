@@ -5,6 +5,9 @@
 #End Region
 
 #Region "Initialization"
+    ''' <summary>
+    ''' Registers the view at a control object.
+    ''' </summary>
     Private Sub SetControl()
         Try
             control = ServerDownHostControl.GetInstance()
@@ -26,8 +29,9 @@
         control.CloseHost()
     End Sub
 
+    <Obsolete()>
     Private Sub buttonLog_Click(sender As Object, e As RoutedEventArgs) Handles buttonLog.Click
-        control.SetLogState()
+        'control.ToggleLogState()
     End Sub
 
     Private Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
@@ -36,6 +40,14 @@
 
     Private Sub buttonDummyLog_Click(sender As Object, e As RoutedEventArgs) Handles buttonDummyLog.Click
         control.CreateDummyLog()
+    End Sub
+
+    Private Sub checkBoxLog_Checked(sender As Object, e As RoutedEventArgs) Handles checkBoxLog.Checked
+        control.SetLogOn()
+    End Sub
+
+    Private Sub checkBoxLog_Unchecked(sender As Object, e As RoutedEventArgs) Handles checkBoxLog.Unchecked
+        control.SetLogOff()
     End Sub
 #End Region
 

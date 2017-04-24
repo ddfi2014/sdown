@@ -19,9 +19,9 @@ ServerDownHost
 </member>
 <member name="M:ServerDownHost.ServerDownHostControl.UpdateListBoxPosition(System.Windows.Controls.ListBox)">
  <summary>
- Updates the listBox's position to show the most recent entry.
+ Updates the ListBox's position to show the most recent entry.
  </summary>
- <param name="listbox"></param>
+ <param name="listBox"></param>
 </member>
 <member name="M:ServerDownHost.ServerDownHostControl.SetHostState(System.String)">
  <summary>
@@ -39,7 +39,7 @@ ServerDownHost
  Stops the hosting.
  </summary>
 </member>
-<member name="M:ServerDownHost.ServerDownHostControl.SetLogState(System.Boolean,System.Boolean)">
+<member name="M:ServerDownHost.ServerDownHostControl.ToggleLogState(System.Boolean,System.Boolean)">
  <summary>
  Turns the Logging on when it is off and vice versa.
  </summary>
@@ -63,7 +63,24 @@ ServerDownHost
  Stops the logging process.
  </summary>
 </member>
-<member name="M:ServerDownHost.ServerDownHostControl.UpdateListBox(ServerDownHost.MainWindow@)">
+<member name="M:ServerDownHost.ServerDownHostControl.StartTimer">
+ <summary>
+ Starts the timer, that triggers an event after a specified amount of time has passed.
+ </summary>
+</member>
+<member name="M:ServerDownHost.ServerDownHostControl.StopTimer">
+ <summary>
+ Stops the timer.
+ </summary>
+</member>
+<member name="M:ServerDownHost.ServerDownHostControl.OnTimedEvent(System.Object,System.Timers.ElapsedEventArgs)">
+ <summary>
+ Calls the <c>TestServers()</c> method after being triggered by the <c>timer</c>.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:ServerDownHost.ServerDownHostControl.UpdateListBox(ServerDownHost.MainWindow)">
  <summary>
  Updates the view's listBox.
  </summary>
@@ -88,6 +105,11 @@ Application Entry Point.
 <summary>
 MainWindow
 </summary>
+</member>
+<member name="M:ServerDownHost.MainWindow.SetControl">
+ <summary>
+ Registers the view at a control object.
+ </summary>
 </member>
 <member name="M:ServerDownHost.MainWindow.InitializeComponent">
 <summary>

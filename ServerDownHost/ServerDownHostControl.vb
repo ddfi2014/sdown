@@ -6,11 +6,12 @@ Public Class ServerDownHostControl
 #Region "Declarations"
     Private sh As ServiceHost
     Private Shared instance As ServerDownHostControl = Nothing
-    Private Shared listViews As List(Of MainWindow) = Nothing
+    Private Shared view As MainWindow = Nothing
     Private logIsOn As Boolean = False
     Private logText As New List(Of String)
     Private timer As Timer = Nothing
-    Private Const interval As Double = 1000 * 1 * 5
+    Private Const interval As Double = 1000 * 1 * 5 'Critical Error after awhile with low intervals, i.e. 1 second.
+    Private serverList As List(Of String) = Nothing
 #End Region
 
 #Region "Singleton-Pattern"
@@ -20,7 +21,7 @@ Public Class ServerDownHostControl
     Public Shared Function GetInstance() As ServerDownHostControl
         If instance Is Nothing Then
             instance = New ServerDownHostControl()
-            listViews = New List(Of MainWindow)()
+            view = New MainWindow()
         End If
         Return instance
     End Function
@@ -32,7 +33,8 @@ Public Class ServerDownHostControl
     ''' </summary>
     ''' <param name="view"></param>
     Public Shared Sub AddView(ByRef view As MainWindow)
-        listViews.Add(view)
+        'ServerDownHostControl.view.Add(view)
+        ServerDownHostControl.view = view
         GetInstance().InitializeWindow()
     End Sub
 
@@ -40,19 +42,21 @@ Public Class ServerDownHostControl
     ''' Initializes all views.
     ''' </summary>
     Public Sub InitializeWindow()
-        For Each view In listViews
-            view.listBoxLog.Items.Clear()
-            view.statusBarItemMessage.Content = ""
-        Next
+        'For Each view In view
+        '    view.listBoxLog.Items.Clear()
+        '    view.statusBarItemMessage.Content = ""
+        'Next
+        view.listBoxLog.Items.Clear()
+        view.statusBarItemMessage.Content = ""
     End Sub
 
     ''' <summary>
-    ''' Updates the listBox's position to show the most recent entry.
+    ''' Updates the ListBox's position to show the most recent entry.
     ''' </summary>
-    ''' <param name="listbox"></param>
-    Public Sub UpdateListBoxPosition(listbox As ListBox)
-        If listbox IsNot Nothing Then
-            Dim _border = TryCast(VisualTreeHelper.GetChild(listbox, 0), Border)
+    ''' <param name="listBox"></param>
+    Public Sub UpdateListBoxPosition(listBox As ListBox)
+        If listBox IsNot Nothing Then
+            Dim _border = TryCast(VisualTreeHelper.GetChild(listBox, 0), Border)
             Dim _scrollViewer = TryCast(VisualTreeHelper.GetChild(_border, 0), ScrollViewer)
             _scrollViewer.ScrollToBottom()
         End If
@@ -63,9 +67,10 @@ Public Class ServerDownHostControl
     ''' </summary>
     ''' <param name="message"></param>
     Private Sub SetHostState(message As String)
-        For Each view In listViews
-            view.statusBarItemMessage.Content = message
-        Next
+        'For Each view In view
+        '    view.statusBarItemMessage.Content = message
+        'Next
+        view.statusBarItemMessage.Content = message
     End Sub
 
     ''' <summary>
@@ -92,7 +97,7 @@ Public Class ServerDownHostControl
     <Obsolete()>
     Public Sub TestHost()
         InitializeHost()
-        SetLogState(runOnce:=True)
+        ToggleLogState(runOnce:=True)
         CloseHost()
     End Sub
 #End Region
@@ -116,16 +121,19 @@ Public Class ServerDownHostControl
     End Sub
 
     Private Sub UpdateListBox()
-        For Each view In listViews
-            view.listBoxLog.Items.Clear()
-            For Each item In logText
-                view.listBoxLog.Items.Add(item)
-            Next
+        'For Each view In view
+        '    view.listBoxLog.Items.Clear()
+        '    For Each item In logText
+        '        view.listBoxLog.Items.Add(item)
+        '    Next
+        'Next
+        view.listBoxLog.Items.Clear()
+        For Each item In logText
+            view.listBoxLog.Items.Add(item)
         Next
     End Sub
 #End Region
 
-    <Obsolete()>
     Public Function GetLogText() As String()
         Return logText.ToArray()
     End Function
@@ -137,11 +145,13 @@ Public Class ServerDownHostControl
     ''' </summary>
     ''' <param name="runOnce"></param>
     ''' <param name="isConsole"></param>
-    Public Sub SetLogState(Optional ByVal runOnce As Boolean = False, Optional ByVal isConsole As Boolean = False)
+    <Obsolete()>
+    Public Sub ToggleLogState(Optional ByVal runOnce As Boolean = False, Optional ByVal isConsole As Boolean = False)
         If logIsOn.Equals(False) Then
             Try
                 StartLog(runOnce, isConsole)
                 logIsOn = True
+                view.statusBarItemMessage.Content = "Logging: Enabled."
             Catch ex As Exception
                 Console.WriteLine(ex.StackTrace)
                 logIsOn = False
@@ -150,6 +160,34 @@ Public Class ServerDownHostControl
             Try
                 EndLog()
                 logIsOn = False
+                view.statusBarItemMessage.Content = "Logging: Disabled."
+            Catch ex As Exception
+                Console.WriteLine(ex.StackTrace)
+                logIsOn = True
+            End Try
+        End If
+    End Sub
+
+    Public Sub SetLogOn()
+        If logIsOn = False Then
+            Try
+                StartLog()
+                'serverList = ServerTest.GetServerList()
+                logIsOn = True
+                view.statusBarItemMessage.Content = "Logging: Enabled."
+            Catch ex As Exception
+                Console.WriteLine(ex.StackTrace)
+                logIsOn = False
+            End Try
+        End If
+    End Sub
+
+    Public Sub SetLogOff()
+        If logIsOn Then
+            Try
+                EndLog()
+                logIsOn = False
+                view.statusBarItemMessage.Content = "Logging: Disabled."
             Catch ex As Exception
                 Console.WriteLine(ex.StackTrace)
                 logIsOn = True
@@ -203,23 +241,22 @@ Public Class ServerDownHostControl
     ''' Tests, if the specified servers are running and updates the views.
     ''' </summary>
     Public Sub TestServers()
-        logText = ServerTest.GetInstance().GetServerState()
-        For Each view In listViews
-            view.Dispatcher.BeginInvoke(Threading.DispatcherPriority.Background, New Action(Sub() UpdateListBox(view)))
-        Next
+        logText = ServerTest.GetServerStateStrings()
+        view.Dispatcher.BeginInvoke(Threading.DispatcherPriority.Background, New Action(Sub() UpdateListBox(view)))
     End Sub
 
     ''' <summary>
     ''' Stops the logging process.
     ''' </summary>
     Public Sub EndLog()
-        'Throw New NotImplementedException("EndLog()")
-        'Stop logging servers
         StopTimer()
     End Sub
 #End Region
 
 #Region "Timer"
+    ''' <summary>
+    ''' Starts the timer, that triggers an event after a specified amount of time has passed.
+    ''' </summary>
     Private Sub StartTimer()
         timer = New Timer(interval)
         AddHandler timer.Elapsed, AddressOf OnTimedEvent
@@ -227,10 +264,18 @@ Public Class ServerDownHostControl
         timer.Start()
     End Sub
 
+    ''' <summary>
+    ''' Stops the timer.
+    ''' </summary>
     Private Sub StopTimer()
         timer.Stop()
     End Sub
 
+    ''' <summary>
+    ''' Calls the <c>TestServers()</c> method after being triggered by the <c>timer</c>.
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
     Private Sub OnTimedEvent(sender As Object, e As ElapsedEventArgs)
         TestServers()
     End Sub
@@ -241,11 +286,12 @@ Public Class ServerDownHostControl
     ''' Updates the view's listBox.
     ''' </summary>
     ''' <param name="view"></param>
-    Public Sub UpdateListBox(ByRef view As MainWindow)
+    Private Sub UpdateListBox(view As MainWindow)
         'view.listBoxLog.ItemsSource = logText
-        For Each item In logText
-            view.listBoxLog.Items.Add(item)
-        Next
+        'For Each item In logText
+        '    view.listBoxLog.Items.Add(item)
+        'Next
+        logText.ForEach(Sub(item) view.listBoxLog.Items.Add(item))
         UpdateListBoxPosition(view.listBoxLog)
         view.statusBarItemMessage.Content = "New Report: " & DateTime.Now.ToLongTimeString()
     End Sub

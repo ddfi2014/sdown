@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ServerDownHost"
         mc:Ignorable="d"
-        Title="ServerDown Host" Height="350" Width="660" MinHeight="350" MinWidth="300" Icon="Resources/019.ico" Loaded="Window_Loaded">
+        Title="ServerDown Host" Height="350" Width="660" MinHeight="350" MinWidth="425" Icon="Resources/019.ico" Loaded="Window_Loaded">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -19,8 +19,9 @@
         <StackPanel Grid.Column="1">
             <Button x:Name="buttonStart" Content="Start" Margin="10,10,10,5" Height="32"/>
             <Button x:Name="buttonStop" Content="Stop" Margin="10,5,10,5" Height="32"/>
-            <Button x:Name="buttonLog" Content="Log"  Margin="10,5,10,5" Height="32"/>
-            <Button x:Name="buttonDummyLog" Content="DUMMY" Margin="10,5,10,5"/>
+            <Button x:Name="buttonLog" Content="Log"  Margin="10,5,10,5" Height="32" IsEnabled="False"/>
+            <CheckBox x:Name="checkBoxLog" Content="Log" HorizontalAlignment="Center"/>
+            <Button x:Name="buttonDummyLog" Content="DUMMY" Margin="10,5,10,5" IsEnabled="False"/>
         </StackPanel>
         <StatusBar Grid.Row="1" Grid.ColumnSpan="2">
             <StatusBarItem Name="statusBarItemMessage" Content="StatusBarItem"/>
