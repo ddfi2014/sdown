@@ -9,6 +9,8 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ServerDownClient", "ServerD
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ServerDownHostLaunch", "ServerDownHostLaunch\ServerDownHostLaunch.vbproj", "{7D25D123-2885-4A3E-B5E8-A5FA0BB6A5B3}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ServerDownClassLibrary", "ServerDownClassLibrary\ServerDownClassLibrary.vbproj", "{12294DBD-5545-47B9-AB69-13AAAD00DFD1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{7D25D123-2885-4A3E-B5E8-A5FA0BB6A5B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D25D123-2885-4A3E-B5E8-A5FA0BB6A5B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D25D123-2885-4A3E-B5E8-A5FA0BB6A5B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12294DBD-5545-47B9-AB69-13AAAD00DFD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12294DBD-5545-47B9-AB69-13AAAD00DFD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12294DBD-5545-47B9-AB69-13AAAD00DFD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12294DBD-5545-47B9-AB69-13AAAD00DFD1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
