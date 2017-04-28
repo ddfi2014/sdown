@@ -20,9 +20,9 @@ Module Module1
                     Case "/s", "-s", "--start"
                         StartHost()
                     Case "/l", "-l", "--log"
-                        SetLog()
-                    Case "/t", "-t", "--test"
-                        TestLog()
+                        StartLog()
+                    Case "/nl", "-nl", "--nolog"
+                        EndLog()
                     Case Else
                         Console.WriteLine("Invalid Argument. List of possible arguments:")
                         Console.ReadKey()
@@ -34,8 +34,12 @@ Module Module1
 #End Region
 
 #Region "Functionality"
-    Private Sub SetLog()
-        ServerDownHost.ServerDownHostControl.GetInstance().ToggleLogState()
+    Private Sub StartLog()
+        ServerDownHost.ServerDownHostControl.GetInstance().SetLogOn()
+    End Sub
+
+    Private Sub EndLog()
+        ServerDownHost.ServerDownHostControl.GetInstance().SetLogOff()
     End Sub
 
     Private Sub StartHost()
@@ -45,10 +49,6 @@ Module Module1
     Private Sub ShowHelp()
         Throw New NotImplementedException("ShowHelp()")
         'Explanation of Parameters, etc.
-    End Sub
-
-    Private Sub TestLog()
-        ServerDownHost.ServerDownHostControl.GetInstance().ToggleLogState(runOnce:=True, isConsole:=True)
     End Sub
 #End Region
 

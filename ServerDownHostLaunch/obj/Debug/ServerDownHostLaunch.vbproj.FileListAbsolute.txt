@@ -10,3 +10,6 @@ C:\Users\praktikant\Documents\Visual Studio 2015\Projects\DDosch\ServerDown1_5\S
 C:\Users\praktikant\Documents\Visual Studio 2015\Projects\DDosch\ServerDown1_5\ServerDown\ServerDownHostLaunch\obj\Debug\ServerDownHostLaunch.exe
 C:\Users\praktikant\Documents\Visual Studio 2015\Projects\DDosch\ServerDown1_5\ServerDown\ServerDownHostLaunch\obj\Debug\ServerDownHostLaunch.xml
 C:\Users\praktikant\Documents\Visual Studio 2015\Projects\DDosch\ServerDown1_5\ServerDown\ServerDownHostLaunch\obj\Debug\ServerDownHostLaunch.pdb
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\DDosch\ServerDown1_5\ServerDown\ServerDownHostLaunch\bin\Debug\ServerDownClassLibrary.dll
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\DDosch\ServerDown1_5\ServerDown\ServerDownHostLaunch\bin\Debug\ServerDownClassLibrary.pdb
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\DDosch\ServerDown1_5\ServerDown\ServerDownHostLaunch\bin\Debug\ServerDownClassLibrary.xml
