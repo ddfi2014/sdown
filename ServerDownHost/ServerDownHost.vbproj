@@ -52,6 +52,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceProcess" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System" />
@@ -138,6 +139,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\019.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ServerDownClassLibrary\ServerDownClassLibrary.vbproj">
+      <Project>{12294dbd-5545-47b9-ab69-13aaad00dfd1}</Project>
+      <Name>ServerDownClassLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

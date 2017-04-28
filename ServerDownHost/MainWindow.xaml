@@ -19,9 +19,7 @@
         <StackPanel Grid.Column="1">
             <Button x:Name="buttonStart" Content="Start" Margin="10,10,10,5" Height="32"/>
             <Button x:Name="buttonStop" Content="Stop" Margin="10,5,10,5" Height="32"/>
-            <Button x:Name="buttonLog" Content="Log"  Margin="10,5,10,5" Height="32" IsEnabled="False"/>
-            <CheckBox x:Name="checkBoxLog" Content="Log" HorizontalAlignment="Center"/>
-            <Button x:Name="buttonDummyLog" Content="DUMMY" Margin="10,5,10,5" IsEnabled="False"/>
+            <Button x:Name="buttonNewWindow" Content="WindowTest" Margin="10,5,10,5" Height="32"/>
         </StackPanel>
         <StatusBar Grid.Row="1" Grid.ColumnSpan="2">
             <StatusBarItem Name="statusBarItemMessage" Content="StatusBarItem"/>

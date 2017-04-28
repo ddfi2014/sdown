@@ -1,53 +1,75 @@
-﻿Imports System.ServiceModel
+﻿Imports System.IO
+Imports System.ServiceModel
 Imports System.Timers
 
 Public Class ServerDownHostControl
-
 #Region "Declarations"
+#Region "Attributes"
     Private sh As ServiceHost
     Private Shared instance As ServerDownHostControl = Nothing
-    Private Shared view As MainWindow = Nothing
-    Private logIsOn As Boolean = False
+    Private Shared views As List(Of MainWindow) = Nothing
+    Private isLogEnabled As Boolean = False
+    Private isSaveEnabled As Boolean = False
     Private logText As New List(Of String)
-    Private timer As Timer = Nothing
-    Private Const interval As Double = 1000 * 1 * 5 'Critical Error after awhile with low intervals, i.e. 1 second.
-    Private serverList As List(Of String) = Nothing
+    Private logTimer As Timer = Nothing
+    Private saveTimer As Timer = Nothing
+    Private defaultLogFileSavePath As String = Path.Combine(Directory.GetCurrentDirectory(), "logfile.log")
+    Private logFileText As New List(Of String)
+    Private statusMessage As String = ""
 #End Region
-
+#Region "Constants"
+    Private Const logInterval As Double = 1000 * 1 * 10 'Critical Error after a while with low intervals; 10 seconds minimum!
+    Private Const saveInterval As Double = 1000 * 1 * 30
+    'Private Const stringSaveEnabled As String = "Automatic saving is enabled."
+    'Private Const stringSaveDisabled As String = "Automatic saving is disabled."
+    'Private Const stringLogFileSaveSuccess As String = "The logfile was saved."
+    Private Const stringLogFileSaveFailure As String = "The logfile could not be saved."
+    'Private Const stringLogEnabled As String = "Logging: Enabled."
+    'Private Const stringLogDisabled As String = "Logging: Disabled."
+    Private Const stringServiceReady As String = "Service ready."
+    Private Const stringServiceStopped As String = "Service stopped."
+    Private Const stringServiceStopFailure As String = "Error: Could not stop service."
+    Private Const stringNewReportText As String = "New Report: "
+#End Region
+#Region "Properties"
+    'Private ReadOnly Property LogState As String
+    '    Get
+    '        If isLogEnabled Then
+    '            Return stringLogEnabled
+    '        Else
+    '            Return stringLogDisabled
+    '        End If
+    '    End Get
+    'End Property
+#End Region
+#End Region
 #Region "Singleton-Pattern"
-    Private Sub New()
-
-    End Sub
     Public Shared Function GetInstance() As ServerDownHostControl
         If instance Is Nothing Then
             instance = New ServerDownHostControl()
-            view = New MainWindow()
+            views = New List(Of MainWindow)()
         End If
         Return instance
     End Function
 #End Region
-
 #Region "Control"
     ''' <summary>
     ''' Adds a view to the list of controlled views.
     ''' </summary>
     ''' <param name="view"></param>
     Public Shared Sub AddView(ByRef view As MainWindow)
-        'ServerDownHostControl.view.Add(view)
-        ServerDownHostControl.view = view
-        GetInstance().InitializeWindow()
+        GetInstance().InitializeWindow(view)
+        views.Add(view)
     End Sub
 
     ''' <summary>
     ''' Initializes all views.
     ''' </summary>
-    Public Sub InitializeWindow()
-        'For Each view In view
-        '    view.listBoxLog.Items.Clear()
-        '    view.statusBarItemMessage.Content = ""
-        'Next
-        view.listBoxLog.Items.Clear()
-        view.statusBarItemMessage.Content = ""
+    Public Sub InitializeWindow(ByRef view As MainWindow)
+        view.ClearList()
+        StartLogTimer()
+        StartSaveTimer()
+        UpdateView(view)
     End Sub
 
     ''' <summary>
@@ -63,44 +85,18 @@ Public Class ServerDownHostControl
     End Sub
 
     ''' <summary>
-    ''' Sets the host's state in the statusbars of all views.
-    ''' </summary>
-    ''' <param name="message"></param>
-    Private Sub SetHostState(message As String)
-        'For Each view In view
-        '    view.statusBarItemMessage.Content = message
-        'Next
-        view.statusBarItemMessage.Content = message
-    End Sub
-
-    ''' <summary>
     ''' Starts the hosting.
     ''' </summary>
     Public Sub InitializeHost()
-#Region "Fallback"
-        'Throw New NotImplementedException("InitializeHost()")
-        'Host with WCF
-        ''Using sh As New ServiceHost(GetType(GetLog))
-        ''    sh.Open()
-        ''    Console.WriteLine("Service bereit...")
-        ''    Console.ReadLine()
-        ''End Using
-#End Region
-        sh = New ServiceHost(GetType(GetLog))
-        sh.Open()
-        SetHostState("Service ready.")
-        Console.WriteLine("Service ready.")
-        Console.ReadLine()
+        If sh Is Nothing Or sh?.State = CommunicationState.Closed Then
+            sh = New ServiceHost(GetType(GetLog))
+            sh.Open()
+            statusMessage = stringServiceReady
+            views.ForEach(Sub(view) view.StatusMessage = statusMessage)
+            Console.WriteLine(stringServiceReady)
+            Console.ReadLine()
+        End If
     End Sub
-
-#Region "DBGTest"
-    <Obsolete()>
-    Public Sub TestHost()
-        InitializeHost()
-        ToggleLogState(runOnce:=True)
-        CloseHost()
-    End Sub
-#End Region
 
     ''' <summary>
     ''' Stops the hosting.
@@ -108,193 +104,198 @@ Public Class ServerDownHostControl
     Public Sub CloseHost()
         Try
             sh.Close()
-            SetHostState("Service stopped.")
+            statusMessage = stringServiceStopped
+            views.ForEach(Sub(view) view.StatusMessage = stringServiceStopped)
         Catch ex As Exception
-            SetHostState("Error: Couldn't stop Service.")
+            statusMessage = stringServiceStopFailure
+            views.ForEach(Sub(view) view.StatusMessage = stringServiceStopFailure)
         End Try
     End Sub
 
-#Region "LogTest"
-    Public Sub CreateDummyLog()
-        logText.Add("This is a test.")
-        UpdateListBox()
-    End Sub
-
-    Private Sub UpdateListBox()
-        'For Each view In view
-        '    view.listBoxLog.Items.Clear()
-        '    For Each item In logText
-        '        view.listBoxLog.Items.Add(item)
-        '    Next
-        'Next
-        view.listBoxLog.Items.Clear()
-        For Each item In logText
-            view.listBoxLog.Items.Add(item)
-        Next
-    End Sub
-#End Region
-
+    ''' <summary>
+    ''' Returns the <c>LogText</c>.
+    ''' </summary>
+    ''' <returns></returns>
     Public Function GetLogText() As String()
         Return logText.ToArray()
     End Function
 #End Region
-
 #Region "Logging"
+#Region "ToggleLogState"
     ''' <summary>
-    ''' Turns the Logging on when it is off and vice versa.
+    ''' Turns the logging process on.
     ''' </summary>
-    ''' <param name="runOnce"></param>
-    ''' <param name="isConsole"></param>
-    <Obsolete()>
-    Public Sub ToggleLogState(Optional ByVal runOnce As Boolean = False, Optional ByVal isConsole As Boolean = False)
-        If logIsOn.Equals(False) Then
-            Try
-                StartLog(runOnce, isConsole)
-                logIsOn = True
-                view.statusBarItemMessage.Content = "Logging: Enabled."
-            Catch ex As Exception
-                Console.WriteLine(ex.StackTrace)
-                logIsOn = False
-            End Try
-        Else
-            Try
-                EndLog()
-                logIsOn = False
-                view.statusBarItemMessage.Content = "Logging: Disabled."
-            Catch ex As Exception
-                Console.WriteLine(ex.StackTrace)
-                logIsOn = True
-            End Try
-        End If
-    End Sub
-
     Public Sub SetLogOn()
-        If logIsOn = False Then
+        If isLogEnabled = False Then
             Try
                 StartLog()
-                'serverList = ServerTest.GetServerList()
-                logIsOn = True
-                view.statusBarItemMessage.Content = "Logging: Enabled."
+                'isLogEnabled = True
+                'statusMessage = stringLogEnabled
+                'views.ForEach(Sub(view) UpdateView(view))
             Catch ex As Exception
                 Console.WriteLine(ex.StackTrace)
-                logIsOn = False
+                'isLogEnabled = False
             End Try
         End If
     End Sub
 
+    ''' <summary>
+    ''' Turns the logging process off.
+    ''' </summary>
     Public Sub SetLogOff()
-        If logIsOn Then
+        If isLogEnabled Then
             Try
                 EndLog()
-                logIsOn = False
-                view.statusBarItemMessage.Content = "Logging: Disabled."
+                'isLogEnabled = False
+                'statusMessage = stringLogDisabled
+                'views.ForEach(Sub(view) UpdateView(view))
             Catch ex As Exception
                 Console.WriteLine(ex.StackTrace)
-                logIsOn = True
+                'isLogEnabled = True
             End Try
         End If
     End Sub
-
+#End Region
+#Region "StartLogEndLog"
     ''' <summary>
     ''' Starts the logging process.
     ''' </summary>
-    ''' <param name="runOnce"></param>
     ''' <param name="isConsole"></param>
-    Public Sub StartLog(Optional ByVal runOnce As Boolean = False, Optional ByVal isConsole As Boolean = False)
+    Public Sub StartLog(Optional ByVal isConsole As Boolean = False)
         If isConsole Then
 #Region "isConsole = True"
-            If Not runOnce Then
-                Throw New NotImplementedException("runOnce = False; isConsole = True")
-            Else
-                Throw New NotImplementedException("runOnce = True; isConsole = True")
-                'Dim reply As String
-                'Console.WriteLine("Do you want to start a test? Y/N")
-                'reply = Console.ReadLine()
-                'If reply.ToLower().First().Equals("y") Or reply.ToLower().First().Equals("j") Then
-                '    TestServers()
-                'ElseIf reply.ToLower().First().Equals("n") Then
-                '    Console.WriteLine("Test aborted.")
-                '    Console.ReadKey()
-                '    Throw New Exception("Test aborted.")
-                'Else
-                '    Console.WriteLine("Invalid reply.")
-                '    Console.ReadKey()
-                '    Throw New Exception("Invalid reply.")
-                'End If
-            End If
+            Throw New NotImplementedException("isConsole = True")
+            'Dim reply As String
+            'Console.WriteLine("Do you want to start a test? Y/N")
+            'reply = Console.ReadLine()
+            'If reply.ToLower().First().Equals("y") Or reply.ToLower().First().Equals("j") Then
+            '    TestServers()
+            'ElseIf reply.ToLower().First().Equals("n") Then
+            '    Console.WriteLine("Test aborted.")
+            '    Console.ReadKey()
+            '    Throw New Exception("Test aborted.")
+            'Else
+            '    Console.WriteLine("Invalid reply.")
+            '    Console.ReadKey()
+            '    Throw New Exception("Invalid reply.")
+            'End If
 #End Region
         Else
-#Region "isConsole = False"
-            If Not runOnce Then
-                StartTimer()
-            Else
-                Dim result As MessageBoxResult = MessageBox.Show("Do you want to start a test?", "Logging Test", MessageBoxButton.YesNo, MessageBoxImage.Question, MessageBoxResult.Cancel)
-                If result.Equals(MessageBoxResult.Yes) Then
-                    TestServers()
-                End If
-            End If
-#End Region
+            StartLogTimer()
         End If
-    End Sub
-
-    ''' <summary>
-    ''' Tests, if the specified servers are running and updates the views.
-    ''' </summary>
-    Public Sub TestServers()
-        logText = ServerTest.GetServerStateStrings()
-        view.Dispatcher.BeginInvoke(Threading.DispatcherPriority.Background, New Action(Sub() UpdateListBox(view)))
     End Sub
 
     ''' <summary>
     ''' Stops the logging process.
     ''' </summary>
     Public Sub EndLog()
-        StopTimer()
+        StopLogTimer()
     End Sub
 #End Region
+#Region "Update"
+    ''' <summary>
+    ''' Tests, if the specified servers are running and updates the views.
+    ''' </summary>
+    Public Sub TestServers()
+        logText = ServerTest.GetServerStateStrings()
+        logFileText.AddRange(logText)
+        views.ForEach(Sub(view) view.Dispatcher.BeginInvoke(Threading.DispatcherPriority.Background, Sub() UpdateListBox(view)))
+    End Sub
 
+    Public Sub UpdateView(ByRef view As MainWindow)
+        'view.checkBoxLog.IsChecked = isLogEnabled
+        'view.checkBoxSave.IsChecked = isSaveEnabled
+        view.StatusMessage = statusMessage
+    End Sub
+#End Region
+#Region "SaveLog"
+    ''' <summary>
+    ''' Saves the log as a file at the default location.
+    ''' </summary>
+    Private Sub SaveLogFile()
+        Dim sw As StreamWriter = StreamWriter.Null
+        Try
+            sw = New StreamWriter(path:=defaultLogFileSavePath, append:=True, encoding:=Text.Encoding.UTF8)
+            logFileText.ForEach(Sub(line) sw.WriteLine(line))
+            logFileText.Clear()
+            sw.Flush()
+            'statusMessage = stringLogFileSaveSuccess
+            'isSaveEnabled = True
+            'views.ForEach(Sub(view) view.Dispatcher.BeginInvoke(Threading.DispatcherPriority.Background, Sub() UpdateView(view)))
+        Catch ex As Exception
+            statusMessage = stringLogFileSaveFailure
+            'isSaveEnabled = False
+            views.ForEach(Sub(view) view.Dispatcher.BeginInvoke(Threading.DispatcherPriority.Background, Sub()
+                                                                                                             UpdateView(view)
+                                                                                                             view.ShowErrorMessage(stringLogFileSaveFailure, ServerDownClassLibrary.EErrorLevel.Warning)
+                                                                                                         End Sub))
+        Finally
+            sw.Close()
+        End Try
+    End Sub
+#End Region
+#End Region
 #Region "Timer"
     ''' <summary>
     ''' Starts the timer, that triggers an event after a specified amount of time has passed.
     ''' </summary>
-    Private Sub StartTimer()
-        timer = New Timer(interval)
-        AddHandler timer.Elapsed, AddressOf OnTimedEvent
-        timer.AutoReset = True
-        timer.Start()
+    Private Sub StartLogTimer()
+        If logTimer Is Nothing Or logTimer?.Enabled = False Then
+            logTimer = New Timer(logInterval)
+            AddHandler logTimer.Elapsed, Sub() TestServers()
+            logTimer.AutoReset = True
+            'isLogEnabled = True
+            'statusMessage = stringLogEnabled
+            'views.ForEach(Sub(view) UpdateView(view))
+            logTimer.Start()
+        End If
     End Sub
 
     ''' <summary>
-    ''' Stops the timer.
+    ''' Initializes and starts the <c>saveTimer</c>.
     ''' </summary>
-    Private Sub StopTimer()
-        timer.Stop()
+    Public Sub StartSaveTimer()
+        If saveTimer Is Nothing Or saveTimer?.Enabled = False Then
+            saveTimer = New Timer(saveInterval)
+            AddHandler saveTimer.Elapsed, Sub() SaveLogFile()
+            saveTimer.AutoReset = True
+            'isSaveEnabled = True
+            'statusMessage = stringSaveEnabled
+            'views.ForEach(Sub(view) UpdateView(view))
+            saveTimer.Start()
+        End If
     End Sub
 
     ''' <summary>
-    ''' Calls the <c>TestServers()</c> method after being triggered by the <c>timer</c>.
+    ''' Stops the <c>logTimer</c>.
     ''' </summary>
-    ''' <param name="sender"></param>
-    ''' <param name="e"></param>
-    Private Sub OnTimedEvent(sender As Object, e As ElapsedEventArgs)
-        TestServers()
+    Private Sub StopLogTimer()
+        If logTimer?.Enabled Then
+            logTimer.Stop()
+        End If
+    End Sub
+
+    ''' <summary>
+    ''' Stops the <c>saveTimer</c>.
+    ''' </summary>
+    Public Sub StopSaveTimer()
+        If saveTimer?.Enabled Then
+            'isSaveEnabled = False
+            'statusMessage = stringSaveDisabled
+            'views.ForEach(Sub(view) UpdateView(view))
+            saveTimer.Stop()
+        End If
     End Sub
 #End Region
-
 #Region "Delegates"
     ''' <summary>
     ''' Updates the view's listBox.
     ''' </summary>
     ''' <param name="view"></param>
     Private Sub UpdateListBox(view As MainWindow)
-        'view.listBoxLog.ItemsSource = logText
-        'For Each item In logText
-        '    view.listBoxLog.Items.Add(item)
-        'Next
-        logText.ForEach(Sub(item) view.listBoxLog.Items.Add(item))
+        logText.ForEach(Sub(item) view.AddLogItem(item))
         UpdateListBoxPosition(view.listBoxLog)
-        view.statusBarItemMessage.Content = "New Report: " & DateTime.Now.ToLongTimeString()
+        view.StatusMessage = stringNewReportText & Date.Now.ToString()
     End Sub
 #End Region
-
 End Class
