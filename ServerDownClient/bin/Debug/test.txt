@@ -1,0 +1,4 @@
+﻿26.04.2017 07:37:49: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+26.04.2017 07:37:49: Server MIGBSRV1(192.168.100.6): The server is running.
+26.04.2017 07:37:49: Process EXPLORER(127.0.0.1): The process is running.
+26.04.2017 07:37:49: Server GOOGLE(google.de): The server is running.

@@ -144,5 +144,11 @@
   <ItemGroup>
     <Resource Include="Resources\save-icon-5404.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ServerDownClassLibrary\ServerDownClassLibrary.vbproj">
+      <Project>{12294dbd-5545-47b9-ab69-13aaad00dfd1}</Project>
+      <Name>ServerDownClassLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

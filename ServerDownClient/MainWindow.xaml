@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ServerDownClient"
         mc:Ignorable="d"
-        Title="ServerDown Client" Height="350" Width="525" MinHeight="250" MinWidth="350" Icon="Resources/019.ico" Loaded="Window_Loaded" Closing="Window_Closing">
+        Title="ServerDown Client" Height="350" Width="600" MinHeight="250" MinWidth="350" Icon="Resources/019.ico" Loaded="Window_Loaded" Closing="Window_Closing">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="20"/>
