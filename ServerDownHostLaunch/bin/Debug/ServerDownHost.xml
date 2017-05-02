@@ -6,13 +6,63 @@ ServerDownHost
 </name>
 </assembly>
 <members>
+<member name="M:ServerDownHost.Server.ConvertStringToHostType(System.String)">
+ <summary>
+ Converts a <c>HostType</c> string into an <c>EHostType</c>.
+ </summary>
+ <param name="hostType"></param>
+ <returns></returns>
+</member>
+<member name="M:ServerDownHost.Server.EvaluateHosts">
+ <summary>
+ Evaluates the validity of hosts and their accessability.
+ </summary>
+</member>
+<member name="M:ServerDownHost.Server.EvaluateHostType">
+ <summary>
+ Evaluates the host's <c>HostType</c> and prepares invalid hosts for removal.
+ </summary>
+</member>
+<member name="M:ServerDownHost.Server.EvaluateServer">
+ <summary>
+ Evaluates, if a server is running and sets the <c>HostState</c> appropiately.
+ </summary>
+</member>
+<member name="M:ServerDownHost.Server.EvaluateProcess">
+ <summary>
+ Evaluates, if a process is running and sets the <c>HostState</c> appropiately.
+ </summary>
+</member>
+<member name="M:ServerDownHost.Server.EvaluateService">
+ <summary>
+ Evaluates, if a service is running and sets the <c>HostState</c> appropriately.
+ </summary>
+</member>
+<member name="M:ServerDownHost.Server.TestServer">
+ <summary>
+ Tests, whether a server is accessable or not and returns the result.
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:ServerDownHost.Server.TestProcess">
+ <summary>
+ Tests, whether a process runs or not and returns the result.
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:ServerDownHost.Server.TestService">
+ <summary>
+ Tests, whether a service runs or not and returns the result.
+ </summary>
+ <returns></returns>
+</member>
 <member name="M:ServerDownHost.ServerDownHostControl.AddView(ServerDownHost.MainWindow@)">
  <summary>
  Adds a view to the list of controlled views.
  </summary>
  <param name="view"></param>
 </member>
-<member name="M:ServerDownHost.ServerDownHostControl.InitializeWindow">
+<member name="M:ServerDownHost.ServerDownHostControl.InitializeWindow(ServerDownHost.MainWindow@)">
  <summary>
  Initializes all views.
  </summary>
@@ -23,12 +73,6 @@ ServerDownHost
  </summary>
  <param name="listBox"></param>
 </member>
-<member name="M:ServerDownHost.ServerDownHostControl.SetHostState(System.String)">
- <summary>
- Sets the host's state in the statusbars of all views.
- </summary>
- <param name="message"></param>
-</member>
 <member name="M:ServerDownHost.ServerDownHostControl.InitializeHost">
  <summary>
  Starts the hosting.
@@ -38,6 +82,12 @@ ServerDownHost
  <summary>
  Stops the hosting.
  </summary>
+</member>
+<member name="M:ServerDownHost.ServerDownHostControl.GetLogText">
+ <summary>
+ Returns the <c>LogText</c>.
+ </summary>
+ <returns></returns>
 </member>
 <member name="M:ServerDownHost.ServerDownHostControl.SetLogOn">
  <summary>
@@ -80,29 +130,15 @@ ServerDownHost
  Initializes and starts the <c>saveTimer</c>.
  </summary>
 </member>
-<member name="M:ServerDownHost.ServerDownHostControl.StopSaveTimer">
- <summary>
- Stops the <c>saveTimer</c>.
- </summary>
-</member>
 <member name="M:ServerDownHost.ServerDownHostControl.StopLogTimer">
  <summary>
  Stops the <c>logTimer</c>.
  </summary>
 </member>
-<member name="M:ServerDownHost.ServerDownHostControl.OnTimedLogEvent(System.Object,System.Timers.ElapsedEventArgs)">
+<member name="M:ServerDownHost.ServerDownHostControl.StopSaveTimer">
  <summary>
- Calls the <c>TestServers()</c> method after being triggered by the <c>logTimer</c>.
+ Stops the <c>saveTimer</c>.
  </summary>
- <param name="sender"></param>
- <param name="e"></param>
-</member>
-<member name="M:ServerDownHost.ServerDownHostControl.OnTimedSaveEvent(System.Object,System.Timers.ElapsedEventArgs)">
- <summary>
- Calls the <c>SaveLogFile()</c> method after being triggered by the <c>saveTimer</c>.
- </summary>
- <param name="sender"></param>
- <param name="e"></param>
 </member>
 <member name="M:ServerDownHost.ServerDownHostControl.UpdateListBox(ServerDownHost.MainWindow)">
  <summary>
