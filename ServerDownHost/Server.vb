@@ -1,6 +1,6 @@
 ﻿Public Class Server
 #Region "Declarations"
-#Region "Attributes"
+#Region "Fields"
     Private Shared maxId As Integer = 0
     Private hostId As Integer
     Private hostName As String
@@ -207,7 +207,7 @@
 #End Region
 #Region "Overrides"
     Public Overrides Function ToString() As String
-        Return hostTime.ToLocalTime().ToString() & ": " & hostType.ToString() & " " & hostName & "(" & hostIPString & ")" & ": " & hostState
+        Return hostTime.ToString() & ": " & hostType.ToString() & " " & hostName & "(" & hostIPString & ")" & ": " & hostState
     End Function
 #End Region
 End Class

@@ -478,3 +478,1331 @@
 28.04.2017 11:28:14: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
 28.04.2017 11:28:14: Process EXPLORER(127.0.0.1): The process is running.
 28.04.2017 11:28:14: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 08:12:34: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 08:12:34: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 08:12:34: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 08:12:34: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 08:12:44: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 08:12:44: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 08:12:44: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 08:12:44: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 08:12:54: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 08:12:54: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 08:12:54: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 08:12:54: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 08:13:04: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 08:13:04: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 08:13:04: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 08:13:04: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 08:13:14: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 08:13:14: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 08:13:14: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 08:13:14: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 08:13:24: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 08:13:24: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 08:13:24: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 08:13:24: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 08:13:34: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 08:13:34: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 08:13:34: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 08:13:34: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 08:13:44: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 08:13:44: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 08:13:44: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 08:13:44: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 08:13:54: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 08:13:54: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 08:13:54: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 08:13:54: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 08:14:04: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 08:14:04: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 08:14:04: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 08:14:04: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 08:14:14: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 08:14:14: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 08:14:14: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 08:14:14: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 08:14:24: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 08:14:24: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 08:14:24: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 08:14:24: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 08:14:34: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 08:14:34: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 08:14:34: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 08:14:34: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 08:14:44: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 08:14:44: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 08:14:44: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 08:14:44: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 08:14:54: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 08:14:54: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 08:14:54: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 08:14:54: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 08:15:04: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 08:15:04: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 08:15:04: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 08:15:04: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 08:15:14: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 08:15:14: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 08:15:14: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 08:15:14: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 08:15:24: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 08:15:24: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 08:15:24: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 08:15:24: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 08:15:34: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 08:15:34: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 08:15:34: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 08:15:34: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 08:15:44: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 08:15:44: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 08:15:44: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 08:15:44: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 08:15:54: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 08:15:54: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 08:15:54: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 08:15:54: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 08:16:04: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 08:16:04: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 08:16:04: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 08:16:04: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 08:16:14: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 08:16:14: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 08:16:14: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 08:16:14: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 08:16:24: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 08:16:24: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 08:16:24: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 08:16:24: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 08:16:34: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 08:16:34: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 08:16:34: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 08:16:34: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 08:16:44: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 08:16:44: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 08:16:44: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 08:16:44: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 08:16:54: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 08:16:54: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 08:16:54: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 08:16:54: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 08:17:04: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 08:17:04: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 08:17:04: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 08:17:04: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 08:17:14: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 08:17:14: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 08:17:14: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 08:17:14: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 08:56:09: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 08:56:09: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 08:56:09: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 08:56:09: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 08:56:19: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 08:56:19: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 08:56:19: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 08:56:19: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 08:56:29: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 08:56:29: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 08:56:29: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 08:56:29: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 08:56:39: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 08:56:39: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 08:56:39: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 08:56:39: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 08:56:49: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 08:56:49: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 08:56:49: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 08:56:49: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 08:56:59: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 08:56:59: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 08:56:59: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 08:56:59: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 08:57:09: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 08:57:09: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 08:57:09: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 08:57:09: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 08:57:19: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 08:57:19: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 08:57:19: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 08:57:19: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 08:57:29: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 08:57:29: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 08:57:29: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 08:57:29: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 08:57:39: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 08:57:39: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 08:57:39: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 08:57:39: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 08:57:49: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 08:57:49: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 08:57:49: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 08:57:49: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 08:57:59: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 08:57:59: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 08:57:59: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 08:57:59: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 08:58:09: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 08:58:09: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 08:58:09: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 08:58:09: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 08:58:19: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 08:58:19: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 08:58:19: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 08:58:19: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 08:58:29: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 08:58:29: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 08:58:29: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 08:58:29: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 08:58:39: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 08:58:39: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 08:58:39: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 08:58:39: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 08:58:49: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 08:58:49: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 08:58:49: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 08:58:49: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 08:58:59: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 08:58:59: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 08:58:59: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 08:58:59: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 08:59:09: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 08:59:09: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 08:59:09: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 08:59:09: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 08:59:19: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 08:59:19: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 08:59:19: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 08:59:19: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 08:59:29: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 08:59:29: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 08:59:29: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 08:59:29: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 08:59:39: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 08:59:39: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 08:59:39: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 08:59:39: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 08:59:49: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 08:59:49: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 08:59:49: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 08:59:49: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 08:59:59: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 08:59:59: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 08:59:59: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 08:59:59: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 09:00:09: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 09:00:09: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 09:00:09: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 09:00:09: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 09:00:19: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 09:00:19: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 09:00:19: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 09:00:19: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 09:00:29: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 09:00:29: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 09:00:29: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 09:00:29: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 09:00:39: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 09:00:39: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 09:00:39: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 09:00:39: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 09:00:49: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 09:00:49: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 09:00:49: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 09:00:49: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 09:26:20: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 09:26:20: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 09:26:20: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 09:26:20: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 09:26:30: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 09:26:30: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 09:26:30: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 09:26:30: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 09:26:40: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 09:26:40: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 09:26:40: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 09:26:40: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 09:26:50: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 09:26:50: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 09:26:50: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 09:26:50: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 09:27:00: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 09:27:00: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 09:27:00: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 09:27:00: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 09:27:10: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 09:27:10: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 09:27:10: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 09:27:10: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 09:27:20: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 09:27:20: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 09:27:20: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 09:27:20: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 09:27:30: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 09:27:30: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 09:27:30: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 09:27:30: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 09:27:40: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 09:27:40: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 09:27:40: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 09:27:40: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 09:27:50: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 09:27:50: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 09:27:50: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 09:27:50: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 09:28:00: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 09:28:00: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 09:28:00: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 09:28:00: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 09:28:10: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 09:28:10: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 09:28:10: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 09:28:10: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 09:28:20: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 09:28:20: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 09:28:20: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 09:28:20: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 09:28:30: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 09:28:30: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 09:28:30: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 09:28:30: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 09:28:40: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 09:28:40: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 09:28:40: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 09:28:40: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 09:28:50: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 09:28:50: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 09:28:50: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 09:28:50: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 09:29:00: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 09:29:00: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 09:29:00: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 09:29:00: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 09:29:10: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 09:29:10: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 09:29:10: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 09:29:10: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 09:29:20: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 09:29:20: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 09:29:20: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 09:29:20: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 09:29:30: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 09:29:30: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 09:29:30: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 09:29:30: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 09:29:40: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 09:29:40: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 09:29:40: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 09:29:40: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 09:29:50: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 09:29:50: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 09:29:50: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 09:29:50: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 09:30:00: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 09:30:00: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 09:30:00: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 09:30:00: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 09:49:00: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 09:49:00: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 09:49:00: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 09:49:00: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 09:49:10: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 09:49:10: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 09:49:10: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 09:49:10: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 09:49:20: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 09:49:20: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 09:49:20: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 09:49:20: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 09:49:30: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 09:49:30: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 09:49:30: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 09:49:30: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 09:49:41: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 09:49:41: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 09:49:41: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 09:49:41: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 09:49:51: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 09:49:51: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 09:49:51: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 09:49:51: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 09:50:01: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 09:50:01: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 09:50:01: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 09:50:01: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 09:50:11: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 09:50:11: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 09:50:11: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 09:50:11: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 09:50:21: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 09:50:21: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 09:50:21: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 09:50:21: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 09:50:31: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 09:50:31: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 09:50:31: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 09:50:31: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 09:50:41: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 09:50:41: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 09:50:41: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 09:50:41: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 09:53:56: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 09:53:56: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 09:53:56: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 09:53:56: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 09:54:06: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 09:54:06: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 09:54:06: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 09:54:06: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 09:54:16: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 09:54:16: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 09:54:16: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 09:54:16: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 09:54:26: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 09:54:26: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 09:54:26: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 09:54:26: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 09:54:36: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 09:54:36: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 09:54:36: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 09:54:36: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 09:54:46: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 09:54:46: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 09:54:46: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 09:54:46: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 09:54:56: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 09:54:56: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 09:54:56: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 09:54:56: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 09:55:06: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 09:55:06: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 09:55:06: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 09:55:06: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 09:55:16: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 09:55:16: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 09:55:16: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 09:55:16: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 09:55:26: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 09:55:26: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 09:55:26: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 09:55:26: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 09:56:15: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 09:56:15: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 09:56:15: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 09:56:15: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 09:56:25: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 09:56:25: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 09:56:25: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 09:56:25: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 09:56:35: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 09:56:35: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 09:56:35: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 09:56:35: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 09:56:45: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 09:56:45: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 09:56:45: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 09:56:45: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 09:56:55: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 09:56:55: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 09:56:55: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 09:56:55: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:22:52: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:22:52: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:22:52: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:22:52: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:23:03: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:23:03: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:23:03: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:23:03: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:23:13: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:23:13: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:23:13: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:23:13: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:23:23: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:23:23: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:23:23: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:23:23: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:23:33: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:23:33: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:23:33: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:23:33: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:23:43: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:23:43: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:23:43: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:23:43: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:23:53: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:23:53: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:23:53: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:23:53: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:24:03: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:24:03: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:24:03: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:24:03: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:24:13: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:24:13: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:24:13: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:24:13: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:24:23: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:24:23: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:24:23: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:24:23: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:24:33: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:24:33: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:24:33: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:24:33: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:30:30: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:30:30: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:30:30: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:30:30: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:30:40: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:30:40: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:30:40: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:30:40: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:30:50: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:30:50: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:30:50: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:30:50: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:31:00: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:31:00: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:31:00: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:31:00: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:31:10: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:31:10: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:31:10: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:31:10: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:31:20: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:31:20: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:31:20: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:31:20: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:31:30: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:31:30: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:31:30: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:31:30: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:31:40: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:31:40: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:31:40: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:31:40: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:31:50: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:31:50: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:31:50: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:31:50: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:32:00: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:32:00: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:32:00: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:32:00: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:32:10: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:32:10: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:32:10: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:32:10: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:32:20: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:32:20: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:32:20: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:32:20: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:32:30: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:32:30: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:32:30: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:32:30: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:32:40: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:32:40: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:32:40: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:32:40: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:32:50: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:32:50: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:32:50: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:32:50: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:33:00: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:33:00: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:33:00: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:33:00: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:33:10: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:33:10: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:33:10: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:33:10: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:33:54: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:33:54: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:33:54: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:33:54: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:34:04: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:34:04: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:34:04: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:34:04: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:34:14: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:34:14: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:34:14: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:34:14: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:34:24: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:34:24: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:34:24: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:34:24: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:34:34: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:34:34: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:34:34: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:34:34: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:34:44: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:34:44: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:34:44: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:34:44: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:34:54: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:34:54: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:34:54: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:34:54: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:35:05: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:35:05: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:35:05: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:35:05: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:35:50: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:35:50: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:35:50: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:35:50: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:36:00: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:36:00: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:36:00: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:36:00: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:36:10: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:36:10: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:36:10: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:36:10: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:36:20: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:36:20: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:36:20: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:36:20: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:36:30: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:36:30: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:36:30: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:36:30: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:36:40: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:36:40: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:36:40: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:36:40: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:36:50: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:36:50: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:36:50: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:36:50: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:37:00: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:37:00: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:37:00: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:37:00: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:37:10: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:37:10: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:37:10: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:37:10: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:37:20: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:37:20: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:37:20: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:37:20: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:37:30: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:37:30: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:37:30: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:37:30: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:39:04: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:39:04: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:39:04: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:39:04: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:39:14: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:39:14: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:39:14: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:39:14: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:39:24: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:39:24: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:39:24: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:39:24: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:39:34: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:39:34: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:39:34: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:39:34: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:39:44: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:39:44: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:39:44: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:39:44: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:39:54: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:39:54: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:39:54: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:39:54: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:40:04: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:40:04: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:40:04: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:40:04: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:40:14: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:40:14: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:40:14: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:40:14: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:40:24: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:40:24: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:40:24: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:40:24: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:40:34: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:40:34: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:40:34: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:40:34: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:40:44: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:40:44: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:40:44: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:40:44: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:40:54: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:40:54: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:40:54: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:40:54: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:41:04: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:41:04: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:41:04: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:41:04: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:41:14: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:41:14: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:41:14: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:41:14: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:41:24: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:41:24: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:41:24: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:41:24: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:41:34: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:41:34: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:41:34: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:41:34: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:41:44: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:41:44: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:41:44: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:41:44: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:41:54: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:41:54: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:41:54: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:41:54: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:42:04: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:42:04: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:42:04: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:42:04: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:42:14: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:42:14: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:42:14: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:42:14: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:45:26: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:45:26: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:45:26: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:45:26: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:45:37: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:45:37: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:45:37: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:45:37: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:45:47: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:45:47: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:45:47: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:45:47: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:45:57: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:45:57: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:45:57: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:45:57: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:46:07: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:46:07: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:46:07: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:46:07: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:46:17: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:46:17: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:46:17: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:46:17: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:46:27: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:46:27: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:46:27: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:46:27: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:46:37: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:46:37: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:46:37: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:46:37: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:48:55: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:48:55: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:48:55: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:48:55: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:49:05: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:49:05: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:49:05: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:49:05: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:51:58: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:51:58: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:51:58: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:51:58: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:52:08: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:52:08: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:52:08: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:52:08: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:58:59: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:58:59: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:58:59: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:58:59: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:59:09: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:59:09: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:59:09: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:59:09: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:59:19: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:59:19: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:59:19: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:59:19: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:59:29: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:59:29: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:59:29: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:59:29: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:59:39: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:59:39: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:59:39: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:59:39: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:59:49: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:59:49: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:59:49: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:59:49: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 10:59:59: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 10:59:59: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 10:59:59: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 10:59:59: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:00:09: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:00:09: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:00:09: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:00:09: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:00:19: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:00:19: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:00:19: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:00:19: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:00:29: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:00:29: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:00:29: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:00:29: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:00:39: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:00:39: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:00:39: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:00:39: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:00:49: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:00:49: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:00:49: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:00:49: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:00:59: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:00:59: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:00:59: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:00:59: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:01:09: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:01:09: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:01:09: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:01:09: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:01:19: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:01:19: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:01:19: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:01:19: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:01:29: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:01:29: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:01:29: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:01:29: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:01:39: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:01:39: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:01:39: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:01:39: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:01:49: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:01:49: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:01:49: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:01:49: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:01:59: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:01:59: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:01:59: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:01:59: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:02:09: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:02:09: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:02:09: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:02:09: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:02:19: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:02:19: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:02:19: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:02:19: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:02:29: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:02:29: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:02:29: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:02:29: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:02:39: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:02:39: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:02:39: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:02:39: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:02:49: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:02:49: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:02:49: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:02:49: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:02:59: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:02:59: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:02:59: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:02:59: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:03:09: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:03:09: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:03:09: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:03:09: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:03:19: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:03:19: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:03:19: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:03:19: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:03:29: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:03:29: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:03:29: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:03:29: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:03:39: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:03:39: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:03:39: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:03:39: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:03:49: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:03:49: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:03:49: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:03:49: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:03:59: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:03:59: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:03:59: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:03:59: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:04:09: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:04:09: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:04:09: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:04:09: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:04:19: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:04:19: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:04:19: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:04:19: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:04:29: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:04:29: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:04:29: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:04:29: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:04:39: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:04:39: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:04:39: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:04:39: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:08:17: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:08:17: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:08:17: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:08:17: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:08:27: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:08:27: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:08:27: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:08:27: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:08:37: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:08:37: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:08:37: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:08:37: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:08:47: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:08:47: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:08:47: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:08:47: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:08:57: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:08:57: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:08:57: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:08:57: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:09:07: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:09:07: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:09:07: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:09:07: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:09:17: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:09:17: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:09:17: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:09:17: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:09:27: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:09:27: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:09:27: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:09:27: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:09:37: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:09:37: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:09:37: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:09:37: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:09:47: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:09:47: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:09:47: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:09:47: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:09:57: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:09:57: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:09:57: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:09:57: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:10:07: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:10:07: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:10:07: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:10:07: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:10:17: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:10:17: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:10:17: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:10:17: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:10:27: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:10:27: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:10:27: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:10:27: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:10:37: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:10:37: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:10:37: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:10:37: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:10:47: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:10:47: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:10:47: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:10:47: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:10:57: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:10:57: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:10:57: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:10:57: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:11:07: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:11:07: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:11:07: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:11:07: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:11:17: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:11:17: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:11:17: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:11:17: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:11:27: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:11:27: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:11:27: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:11:27: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:11:37: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:11:37: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:11:37: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:11:37: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:11:47: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:11:47: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:11:47: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:11:47: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:11:57: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:11:57: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:11:57: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:11:57: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:12:07: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:12:07: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:12:07: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:12:07: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:12:17: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:12:17: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:12:17: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:12:17: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:12:27: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:12:27: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:12:27: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:12:27: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:12:37: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:12:37: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:12:37: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:12:37: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:12:47: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:12:47: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:12:47: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:12:47: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:12:57: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:12:57: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:12:57: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:12:57: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:13:07: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:13:07: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:13:07: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:13:07: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:13:17: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:13:17: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:13:17: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:13:17: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:13:27: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:13:27: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:13:27: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:13:27: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:13:37: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:13:37: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:13:37: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:13:37: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:13:47: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:13:47: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:13:47: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:13:47: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:13:57: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:13:57: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:13:57: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:13:57: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:14:07: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:14:07: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:14:07: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:14:07: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:14:17: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:14:17: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:14:17: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:14:17: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:14:27: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:14:27: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:14:27: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:14:27: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:14:37: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:14:37: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:14:37: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:14:37: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:14:47: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:14:47: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:14:47: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:14:47: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:14:57: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:14:57: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:14:57: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:14:57: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:15:07: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:15:07: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:15:07: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:15:07: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:15:17: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:15:17: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:15:17: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:15:17: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:15:27: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:15:27: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:15:27: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:15:27: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:15:37: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:15:37: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:15:37: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:15:37: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:15:48: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:15:48: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:15:48: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:15:48: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:15:58: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:15:58: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:15:58: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:15:58: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:16:08: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:16:08: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:16:08: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:16:08: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:16:18: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:16:18: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:16:18: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:16:18: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:16:28: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:16:28: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:16:28: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:16:28: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:16:38: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:16:38: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:16:38: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:16:38: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:16:48: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:16:48: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:16:48: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:16:48: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:16:58: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:16:58: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:16:58: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:16:58: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:17:08: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:17:08: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:17:08: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:17:08: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:17:18: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:17:18: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:17:18: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:17:18: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:17:28: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:17:28: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:17:28: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:17:28: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:52:11: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:52:11: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:52:11: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:52:11: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:52:21: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:52:21: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:52:21: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:52:21: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:52:31: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:52:31: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:52:31: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:52:31: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:52:41: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:52:41: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:52:41: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:52:41: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:52:51: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:52:51: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:52:51: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:52:51: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:53:01: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:53:01: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:53:01: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:53:01: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:53:11: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:53:11: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:53:11: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:53:11: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:53:21: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:53:21: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:53:21: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:53:21: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:53:31: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:53:31: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:53:31: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:53:31: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:53:41: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:53:41: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:53:41: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:53:41: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:53:51: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:53:51: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:53:51: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:53:51: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:55:36: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:55:36: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:55:36: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:55:36: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:55:46: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:55:46: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:55:46: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:55:46: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:55:56: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:55:56: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:55:56: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:55:56: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:56:06: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:56:06: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:56:06: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:56:06: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:56:16: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:56:16: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:56:16: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:56:16: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:56:26: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:56:26: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:56:26: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:56:26: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:56:36: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:56:36: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:56:36: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:56:36: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:56:46: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:56:46: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:56:46: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:56:46: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:56:56: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:56:56: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:56:56: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:56:56: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:57:06: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:57:06: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:57:06: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:57:06: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:57:16: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:57:16: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:57:16: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:57:16: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:57:26: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:57:26: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:57:26: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:57:26: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:57:36: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:57:36: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:57:36: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:57:36: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:57:46: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:57:46: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:57:46: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:57:46: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:57:56: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:57:56: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:57:56: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:57:56: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:58:06: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:58:06: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:58:06: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:58:06: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:58:16: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:58:16: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:58:16: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:58:16: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:58:26: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:58:26: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:58:26: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:58:26: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:58:36: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:58:36: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:58:36: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:58:36: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 11:58:46: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 11:58:46: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 11:58:46: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 11:58:46: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 13:56:11: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 13:56:11: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 13:56:11: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 13:56:11: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 13:56:21: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 13:56:21: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 13:56:21: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 13:56:21: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 13:56:31: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 13:56:31: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 13:56:31: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 13:56:31: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 13:56:41: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 13:56:41: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 13:56:41: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 13:56:41: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 13:56:51: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 13:56:51: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 13:56:51: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 13:56:51: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 15:11:04: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 15:11:04: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 15:11:04: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 15:11:04: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 15:11:14: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 15:11:14: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 15:11:14: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 15:11:14: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 15:12:48: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 15:12:48: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 15:12:48: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 15:12:48: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 15:12:58: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 15:12:58: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 15:12:58: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 15:12:58: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 15:33:08: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 15:33:08: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 15:33:08: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 15:33:08: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 15:33:18: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 15:33:18: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 15:33:18: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 15:33:18: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 15:33:28: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 15:33:28: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 15:33:28: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 15:33:28: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 15:33:38: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 15:33:38: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 15:33:38: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 15:33:38: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 15:33:48: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 15:33:48: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 15:33:48: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 15:33:48: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 15:35:11: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 15:35:11: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 15:35:11: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 15:35:11: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 15:35:21: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 15:35:21: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 15:35:21: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 15:35:21: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 15:35:31: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 15:35:31: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 15:35:31: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 15:35:31: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 15:35:41: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 15:35:41: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 15:35:41: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 15:35:41: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 15:35:51: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 15:35:51: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 15:35:51: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 15:35:51: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 15:37:35: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 15:37:35: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 15:37:35: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 15:37:35: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 15:37:45: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 15:37:45: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 15:37:45: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 15:37:45: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 15:37:55: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 15:37:55: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 15:37:55: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 15:37:55: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 15:38:05: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 15:38:05: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 15:38:05: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 15:38:05: Service AUDIOSRV(127.0.0.1): The service is running.
+02.05.2017 15:38:15: Server MIGSSRV1(192.168.100.8): The server cannot be reached.
+02.05.2017 15:38:15: Server MIGBSRV1(192.168.100.6): The server cannot be reached.
+02.05.2017 15:38:15: Process EXPLORER(127.0.0.1): The process is running.
+02.05.2017 15:38:15: Service AUDIOSRV(127.0.0.1): The service is running.

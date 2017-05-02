@@ -76,6 +76,7 @@
     <Compile Include="Server.vb" />
     <Compile Include="ServerDownHostControl.vb" />
     <Compile Include="ServerTest.vb" />
+    <Compile Include="ViewList.vb" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

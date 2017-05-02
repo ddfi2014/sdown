@@ -4,14 +4,15 @@ Class MainWindow
     Implements IView
 #Region "Declaration"
     Private control As ServerDownHostControl = Nothing
-    Public Property StatusMessage() As String
-        Get
-            Return statusBarItemMessage.Content
-        End Get
-        Set(value As String)
-            statusBarItemMessage.Content = value
-        End Set
-    End Property
+    'Public Property StatusMessage() As String
+    '    Get
+    '        Return statusBarItemMessage.Content
+    '    End Get
+    '    Set(value As String)
+    '        statusBarItemMessage.Content = value
+    '    End Set
+    'End Property
+    Private viewList As IViewList = Nothing
 #End Region
 #Region "Initialization"
     ''' <summary>
@@ -19,6 +20,7 @@ Class MainWindow
     ''' </summary>
     Private Sub SetControl()
         Try
+            viewList = New ViewList(listBoxLog)
             control = ServerDownHostControl.GetInstance()
             ServerDownHostControl.AddView(Me)
         Catch ex As Exception
@@ -58,6 +60,22 @@ Class MainWindow
 
         End Select
     End Sub
+
+    Public Sub Dispatch(priority As Threading.DispatcherPriority, method As [Delegate]) Implements IView.Dispatch
+        Dispatcher.BeginInvoke(priority, method)
+    End Sub
+
+    Public Function GetStatusMessage() As String Implements IView.GetStatusMessage
+        Return statusBarItemMessage.Content
+    End Function
+
+    Public Sub SetStatusMessage(message As String) Implements IView.SetStatusMessage
+        statusBarItemMessage.Content = message
+    End Sub
+
+    Public Function GetStatusLogList() As IViewList Implements IView.GetStatusLogList
+        Return listBoxLog
+    End Function
 #End Region
 #Region "Events"
     Private Sub buttonStart_Click(sender As Object, e As RoutedEventArgs) Handles buttonStart.Click
@@ -88,9 +106,9 @@ Class MainWindow
     '    control.StopSaveTimer()
     'End Sub
 
-    Private Sub buttonNewWindow_Click(sender As Object, e As RoutedEventArgs) Handles buttonNewWindow.Click
-        Dim testW As New MainWindow()
-        testW.Show()
-    End Sub
+    'Private Sub buttonNewWindow_Click(sender As Object, e As RoutedEventArgs) Handles buttonNewWindow.Click
+    '    Dim testW As New MainWindow()
+    '    testW.Show()
+    'End Sub
 #End Region
 End Class

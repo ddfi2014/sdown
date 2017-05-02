@@ -56,13 +56,13 @@ ServerDownHost
  </summary>
  <returns></returns>
 </member>
-<member name="M:ServerDownHost.ServerDownHostControl.AddView(ServerDownHost.MainWindow@)">
+<member name="M:ServerDownHost.ServerDownHostControl.AddView(ServerDownClassLibrary.IView@)">
  <summary>
  Adds a view to the list of controlled views.
  </summary>
  <param name="view"></param>
 </member>
-<member name="M:ServerDownHost.ServerDownHostControl.InitializeWindow(ServerDownHost.MainWindow@)">
+<member name="M:ServerDownHost.ServerDownHostControl.InitializeWindow(ServerDownClassLibrary.IView@)">
  <summary>
  Initializes all views.
  </summary>
