@@ -71,6 +71,7 @@
     </ApplicationDefinition>
     <Compile Include="GetLogClient.vb" />
     <Compile Include="ServerDownClientControl.vb" />
+    <Compile Include="ViewList.vb" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

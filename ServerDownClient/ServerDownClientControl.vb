@@ -6,7 +6,7 @@ Imports Microsoft.Win32
 Public Class ServerDownClientControl
 #Region "Declarations"
     Private proxy As New GetLogClient()
-    Private clientView As MainWindow
+    Private clientView As ServerDownClassLibrary.IView
     Private serverLog As String()
     Private fullLog As New List(Of String)()
     Private timer As Timers.Timer
@@ -29,16 +29,29 @@ Public Class ServerDownClientControl
 #End Region
 #Region "Control"
     Public Sub InitializeWindow()
-        clientView.listBoxLog.Items.Clear()
-        clientView.StatusMessage = ""
+        clientView.ClearList()
+        clientView.SetStatusMessage("")
     End Sub
 
-    Private Sub UpdateListBoxPosition(listBox As ListBox)
-        If listBox IsNot Nothing Then
-            Dim _border = TryCast(VisualTreeHelper.GetChild(listBox, 0), Border)
-            Dim _scrollViewer = TryCast(VisualTreeHelper.GetChild(_border, 0), ScrollViewer)
-            _scrollViewer.ScrollToBottom()
-        End If
+    'Private Sub UpdateListBoxPosition(listBox As ListBox)
+    '    If listBox IsNot Nothing Then
+    '        Dim _border = TryCast(VisualTreeHelper.GetChild(listBox, 0), Border)
+    '        Dim _scrollViewer = TryCast(VisualTreeHelper.GetChild(_border, 0), ScrollViewer)
+    '        _scrollViewer.ScrollToBottom()
+    '    End If
+    'End Sub
+
+    Private Sub UpdateListBoxPosition(view As ServerDownClassLibrary.IView)
+        Try
+            Dim listBox As ListBox = view.GetStatusLogList().GetList()
+            If listBox IsNot Nothing Then
+                Dim _border = TryCast(VisualTreeHelper.GetChild(listBox, 0), Border)
+                Dim _scrollViewer = TryCast(VisualTreeHelper.GetChild(_border, 0), ScrollViewer)
+                _scrollViewer.ScrollToBottom()
+            End If
+        Catch ex As Exception
+
+        End Try
     End Sub
 
     ''' <summary>
@@ -48,11 +61,13 @@ Public Class ServerDownClientControl
         Try
             serverLog = proxy.GetServerLog()
             serverLog.ToList().ForEach(Sub(x) fullLog.Add(x))
-            clientView.Dispatcher.BeginInvoke(Threading.DispatcherPriority.Background, Sub() UpdateList())
+            clientView.Dispatch(Threading.DispatcherPriority.Send, Sub() UpdateList())
         Catch ex As Exception
             Console.WriteLine(ex.StackTrace)
-            clientView.Dispatcher.BeginInvoke(Threading.DispatcherPriority.Background, Sub() clientView.AddLogItem(Date.UtcNow.ToString() & " " & stringServerNotConnected))
-            clientView.Dispatcher.BeginInvoke(Threading.DispatcherPriority.Background, Sub() UpdateListBoxPosition(clientView.StatusLogList))
+            clientView.Dispatch(Threading.DispatcherPriority.Background, Sub()
+                                                                             clientView.AddLogItem(Date.UtcNow.ToString() & " " & stringServerNotConnected)
+                                                                             UpdateListBoxPosition(clientView)
+                                                                         End Sub)
         End Try
     End Sub
 
@@ -64,12 +79,11 @@ Public Class ServerDownClientControl
         Dim sw As StreamWriter = StreamWriter.Null
         Try
             sw = New StreamWriter(path:=filePath, append:=False, encoding:=Text.Encoding.UTF8)
-            'serverLog.ToList().ForEach(Sub(line) sw.WriteLine(line))
             fullLog.ForEach(Sub(line) sw.WriteLine(line))
             sw.Flush()
-            clientView.StatusMessage = stringLogSaved & filePath & "."
+            clientView.SetStatusMessage(stringLogSaved & filePath & ".")
         Catch ex As Exception
-            clientView.StatusMessage = stringLogNotSaved
+            clientView.SetStatusMessage(stringLogNotSaved)
             MessageBox.Show(stringLogNotSaved, "Error", MessageBoxButton.OK, MessageBoxImage.Error, MessageBoxResult.OK, MessageBoxOptions.None)
         Finally
             sw.Close()
@@ -82,7 +96,6 @@ Public Class ServerDownClientControl
     Public Sub Save()
         Dim defaultSavePath As String = GetDefaultSavePath()
         WriteFile(defaultSavePath)
-        'clientView.statusBarItemMessage.Content = "Log saved as: " & defaultSavePath & "."
     End Sub
 
     ''' <summary>
@@ -96,12 +109,10 @@ Public Class ServerDownClientControl
         Try
             If fileDialog.ShowDialog() Then
                 WriteFile(fileDialog.FileName)
-                'clientView.statusBarItemMessage.Content = stringLogSaved & fileDialog.FileName & "."
-                clientView.StatusMessage = stringLogSaved & fileDialog.FileName & "."
+                clientView.SetStatusMessage(stringLogSaved & fileDialog.FileName & ".")
             End If
         Catch ex As Exception
-            'clientView.statusBarItemMessage.Content = stringLogNotSaved
-            clientView.StatusMessage = stringLogNotSaved
+            clientView.SetStatusMessage(stringLogNotSaved)
         End Try
     End Sub
 
@@ -112,8 +123,7 @@ Public Class ServerDownClientControl
     ''' <para>Example: <c>C:\...\filename.txt</c></para></param>
     Public Sub SaveAs(filePath As String)
         WriteFile(filePath)
-        'clientView.statusBarItemMessage.Content = stringLogSaved & filePath & "."
-        clientView.StatusMessage = stringLogSaved & filePath & "."
+        clientView.SetStatusMessage(stringLogSaved & filePath & ".")
     End Sub
 
     Private Function GetDefaultSavePath() As String
@@ -134,7 +144,7 @@ Public Class ServerDownClientControl
     ''' Starts the timer that the server's log at the set interval.
     ''' </summary>
     Private Sub StartTimer()
-        timer = New Timers.Timer(interval)
+        timer = New Timer(interval)
         AddHandler timer.Elapsed, Sub() GetTextLog()
         timer.AutoReset = True
         timer.Start()
@@ -149,14 +159,8 @@ Public Class ServerDownClientControl
 #End Region
 #Region "Delegates"
     Public Sub UpdateList()
-        UpdateListBoxPosition(clientView.listBoxLog)
-        'serverLog.ToList().ForEach(Sub(x) clientView.listBoxLog.Items.Add(x))
-        serverLog.ToList().ForEach(Sub(x) clientView.AddLogItem(x))
-    End Sub
-#End Region
-#Region "Events"
-    Private Sub OnTimedEvent(sender As Object, e As ElapsedEventArgs)
-        GetTextLog()
+        UpdateListBoxPosition(clientView)
+        serverLog.ToList().ForEach(Sub(item) clientView.AddLogItem(item))
     End Sub
 #End Region
 End Class

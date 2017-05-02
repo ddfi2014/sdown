@@ -4,14 +4,7 @@ Class MainWindow
     Implements IView
 #Region "Declaration"
     Private control As ServerDownClientControl
-    Public Property StatusMessage() As String
-        Get
-            Return statusBarItemMessage.Content
-        End Get
-        Set(value As String)
-            statusBarItemMessage.Content = value
-        End Set
-    End Property
+    Private viewList As ViewList
     Public ReadOnly Property StatusLogList() As ListBox
         Get
             Return listBoxLog
@@ -42,9 +35,26 @@ Class MainWindow
         End Select
 
     End Sub
+
+    Public Sub Dispatch(priority As Threading.DispatcherPriority, method As [Delegate]) Implements IView.Dispatch
+        Dispatcher.BeginInvoke(priority, method)
+    End Sub
+
+    Public Function GetStatusMessage() As String Implements IView.GetStatusMessage
+        Return statusBarItemMessage.Content
+    End Function
+
+    Public Sub SetStatusMessage(message As String) Implements IView.SetStatusMessage
+        statusBarItemMessage.Content = message
+    End Sub
+
+    Public Function GetStatusLogList() As IViewList Implements IView.GetStatusLogList
+        Return viewList
+    End Function
 #End Region
 #Region "Events"
     Private Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
+        viewList = New ViewList(listBoxLog)
         control = New ServerDownClientControl(Me)
     End Sub
 
