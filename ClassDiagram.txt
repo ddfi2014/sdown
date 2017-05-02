@@ -1,0 +1,4 @@
+[ServerView]*-1[ServerController]
+[ServerController]1-*[ClientProxy]
+[ClientView]1-1[ClientController]
+[ClientController]-.-[ClientProxy]
