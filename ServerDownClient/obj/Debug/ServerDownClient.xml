@@ -6,6 +6,12 @@ ServerDownClient
 </name>
 </assembly>
 <members>
+<member name="M:ServerDownClient.ServerDownClientControl.UpdateListBoxPosition(ServerDownClassLibrary.IView)">
+ <summary>
+ Updates the position of the View's <c>IViewList</c>, if it is a <c>ListBox</c>.
+ </summary>
+ <param name="view"></param>
+</member>
 <member name="M:ServerDownClient.ServerDownClientControl.GetTextLog">
  <summary>
  Obtains the server's log.
@@ -33,12 +39,6 @@ ServerDownClient
  </summary>
  <param name="filePath">The path that refers to the location of the file and its name.
  <para>Example: <c>C:\...\filename.txt</c></para></param>
-</member>
-<member name="M:ServerDownClient.ServerDownClientControl.GetCustomDateTimeString">
- <summary>
- Creates the current date as a string.
- </summary>
- <returns></returns>
 </member>
 <member name="M:ServerDownClient.ServerDownClientControl.StartTimer">
  <summary>

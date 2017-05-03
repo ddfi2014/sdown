@@ -1,20 +1,30 @@
 ﻿Imports System.IO
-Imports System.Threading.Tasks
 Imports System.Timers
 Imports Microsoft.Win32
+Imports ServerDownClassLibrary
 
 Public Class ServerDownClientControl
 #Region "Declarations"
     Private proxy As New GetLogClient()
-    Private clientView As ServerDownClassLibrary.IView
+    Private clientView As IView
     Private serverLog As String()
     Private fullLog As New List(Of String)()
-    Private timer As Timers.Timer
+    Private timer As Timer
     Private Const interval As Double = 1000 * 1 * 15
     Private Const stringSaveDialogFilter As String = "Textdateien (*.txt, *.log)|*.txt;*.log|Alle Dateien (*.*)|*.*"
     Private Const stringLogSaved As String = "Log saved as: "
     Private Const stringLogNotSaved As String = "Log could not be saved."
     Private Const stringServerNotConnected As String = "Error: Server could not be reached."
+    Public ReadOnly Property LocalDateTimeString() As String
+        Get
+            Return Date.UtcNow.ToLocalTime().ToString()
+        End Get
+    End Property
+    Public ReadOnly Property CustomLocalDateTimeString() As String
+        Get
+            Return Date.UtcNow.ToLocalTime().ToString("yyyyMMdd_HHmmss")
+        End Get
+    End Property
 #End Region
 #Region "Instance"
     Public Sub New()
@@ -31,23 +41,28 @@ Public Class ServerDownClientControl
     Public Sub InitializeWindow()
         clientView.ClearList()
         clientView.SetStatusMessage("")
+        Try
+            Dim mw As MainWindow = clientView
+            AddHandler mw.buttonSaveLog.Click, Sub() Save()
+            AddHandler mw.menuItemOptionsSave.Click, Sub() Save()
+            AddHandler mw.menuItemOptionsSaveAs.Click, Sub() SaveAs()
+        Catch ex As Exception
+
+        End Try
     End Sub
 
-    'Private Sub UpdateListBoxPosition(listBox As ListBox)
-    '    If listBox IsNot Nothing Then
-    '        Dim _border = TryCast(VisualTreeHelper.GetChild(listBox, 0), Border)
-    '        Dim _scrollViewer = TryCast(VisualTreeHelper.GetChild(_border, 0), ScrollViewer)
-    '        _scrollViewer.ScrollToBottom()
-    '    End If
-    'End Sub
-
-    Private Sub UpdateListBoxPosition(view As ServerDownClassLibrary.IView)
+    ''' <summary>
+    ''' Updates the position of the View's <c>IViewList</c>, if it is a <c>ListBox</c>.
+    ''' </summary>
+    ''' <param name="view"></param>
+    Private Sub UpdateListBoxPosition(view As IView)
         Try
             Dim listBox As ListBox = view.GetStatusLogList().GetList()
             If listBox IsNot Nothing Then
                 Dim _border = TryCast(VisualTreeHelper.GetChild(listBox, 0), Border)
-                Dim _scrollViewer = TryCast(VisualTreeHelper.GetChild(_border, 0), ScrollViewer)
-                _scrollViewer.ScrollToBottom()
+                'Dim _scrollViewer = TryCast(VisualTreeHelper.GetChild(_border, 0), ScrollViewer)
+                '_scrollViewer.ScrollToBottom()
+                TryCast(VisualTreeHelper.GetChild(_border, 0), ScrollViewer).ScrollToBottom()
             End If
         Catch ex As Exception
 
@@ -65,7 +80,8 @@ Public Class ServerDownClientControl
         Catch ex As Exception
             Console.WriteLine(ex.StackTrace)
             clientView.Dispatch(Threading.DispatcherPriority.Background, Sub()
-                                                                             clientView.AddLogItem(Date.UtcNow.ToString() & " " & stringServerNotConnected)
+                                                                             'clientView.AddLogItem(Date.UtcNow.ToString() & " " & stringServerNotConnected)
+                                                                             clientView.AddLogItem(LocalDateTimeString & " " & stringServerNotConnected)
                                                                              UpdateListBoxPosition(clientView)
                                                                          End Sub)
         End Try
@@ -127,16 +143,8 @@ Public Class ServerDownClientControl
     End Sub
 
     Private Function GetDefaultSavePath() As String
-        Dim defaultSavePath As String = Path.GetFullPath("log_" + GetCustomDateTimeString() + ".log")
+        Dim defaultSavePath As String = Path.GetFullPath("log_" + CustomLocalDateTimeString + ".log")
         Return defaultSavePath
-    End Function
-
-    ''' <summary>
-    ''' Creates the current date as a string.
-    ''' </summary>
-    ''' <returns></returns>
-    Private Function GetCustomDateTimeString() As String
-        Return Date.UtcNow.ToLocalTime().ToString("yyyyMMdd_HHmmss")
     End Function
 #End Region
 #Region "Timer"
