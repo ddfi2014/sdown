@@ -56,22 +56,22 @@ ServerDownHost
  </summary>
  <returns></returns>
 </member>
-<member name="M:ServerDownHost.ServerDownHostControl.AddView(ServerDownHost.MainWindow@)">
+<member name="M:ServerDownHost.ServerDownHostControl.AddView(ServerDownClassLibrary.IView@)">
  <summary>
  Adds a view to the list of controlled views.
  </summary>
  <param name="view"></param>
 </member>
-<member name="M:ServerDownHost.ServerDownHostControl.InitializeWindow(ServerDownHost.MainWindow@)">
+<member name="M:ServerDownHost.ServerDownHostControl.InitializeWindow(ServerDownClassLibrary.IView@)">
  <summary>
  Initializes all views.
  </summary>
 </member>
-<member name="M:ServerDownHost.ServerDownHostControl.UpdateListBoxPosition(System.Windows.Controls.ListBox)">
+<member name="M:ServerDownHost.ServerDownHostControl.UpdateListBoxPosition(ServerDownClassLibrary.IView)">
  <summary>
- Updates the ListBox's position to show the most recent entry.
+ Updates the position of the IView's ListBox to show the most recent entry.
  </summary>
- <param name="listBox"></param>
+ <param name="view"></param>
 </member>
 <member name="M:ServerDownHost.ServerDownHostControl.InitializeHost">
  <summary>
@@ -97,17 +97,6 @@ ServerDownHost
 <member name="M:ServerDownHost.ServerDownHostControl.SetLogOff">
  <summary>
  Turns the logging process off.
- </summary>
-</member>
-<member name="M:ServerDownHost.ServerDownHostControl.StartLog(System.Boolean)">
- <summary>
- Starts the logging process.
- </summary>
- <param name="isConsole"></param>
-</member>
-<member name="M:ServerDownHost.ServerDownHostControl.EndLog">
- <summary>
- Stops the logging process.
  </summary>
 </member>
 <member name="M:ServerDownHost.ServerDownHostControl.TestServers">
@@ -140,7 +129,7 @@ ServerDownHost
  Stops the <c>saveTimer</c>.
  </summary>
 </member>
-<member name="M:ServerDownHost.ServerDownHostControl.UpdateListBox(ServerDownHost.MainWindow)">
+<member name="M:ServerDownHost.ServerDownHostControl.UpdateListBox(ServerDownClassLibrary.IView)">
  <summary>
  Updates the view's listBox.
  </summary>
