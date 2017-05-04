@@ -45,14 +45,4 @@ Public Class ServerTest
         Next
     End Sub
 #End Region
-#Region "Debug"
-    <Obsolete()>
-    Public Shared Function DBGTest() As List(Of String)
-        Dim stateList As New List(Of String)()
-        stateList.Add("This is a test.")
-        stateList.Add("This tests the ServerTest.")
-        stateList.Add("This is a DUMMY for the actual methods.")
-        Return stateList
-    End Function
-#End Region
 End Class

@@ -147,5 +147,11 @@
       <Name>ServerDownClassLibrary</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\down_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\netdrive_unav.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

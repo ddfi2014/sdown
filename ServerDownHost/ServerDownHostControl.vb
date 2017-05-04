@@ -8,7 +8,6 @@ Public Class ServerDownHostControl
 #Region "Fields"
     Private sh As ServiceHost
     Private Shared instance As ServerDownHostControl = Nothing
-    'Private Shared views As List(Of MainWindow) = Nothing
     Private Shared views As List(Of IView) = Nothing
     Private isLogEnabled As Boolean = False
     Private isSaveEnabled As Boolean = False
@@ -20,8 +19,8 @@ Public Class ServerDownHostControl
     Private statusMessage As String = ""
 #End Region
 #Region "Constants"
-    Private Const logInterval As Double = 1000 * 1 * 10 'Critical Error after a while with low intervals; 10 seconds minimum!
-    Private Const saveInterval As Double = 1000 * 1 * 30
+    Private Const logInterval As Double = 1000 * 1 * 5 'Critical Error after a while with low intervals; 10 seconds minimum!
+    Private Const saveInterval As Double = 1000 * 1 * 15
     Private Const stringLogFileSaveFailure As String = "The logfile could not be saved."
     Private Const stringServiceReady As String = "Service ready."
     Private Const stringServiceStopped As String = "Service stopped."
@@ -54,18 +53,28 @@ Public Class ServerDownHostControl
     Public Sub InitializeWindow(ByRef view As IView)
         view.ClearList()
         UpdateView(view)
+        Try
+            Dim mw As MainWindow = view
+            AddHandler mw.buttonStart.Click, Sub() InitializeHost()
+            AddHandler mw.buttonStop.Click, Sub() CloseHost()
+        Catch ex As Exception
+        End Try
     End Sub
 
     ''' <summary>
-    ''' Updates the ListBox's position to show the most recent entry.
+    ''' Updates the position of the IView's ListBox to show the most recent entry.
     ''' </summary>
-    ''' <param name="listBox"></param>
-    Private Sub UpdateListBoxPosition(listBox As ListBox)
-        If listBox IsNot Nothing Then
-            Dim _border = TryCast(VisualTreeHelper.GetChild(listBox, 0), Border)
-            Dim _scrollViewer = TryCast(VisualTreeHelper.GetChild(_border, 0), ScrollViewer)
-            _scrollViewer.ScrollToBottom()
-        End If
+    ''' <param name="view"></param>
+    Private Sub UpdateListBoxPosition(view As IView)
+        Try
+            Dim listBox As ListBox = view.GetStatusLogList().GetList()
+            If listBox IsNot Nothing Then
+                Dim _border = TryCast(VisualTreeHelper.GetChild(listBox, 0), Border)
+                Dim _scrollViewer = TryCast(VisualTreeHelper.GetChild(_border, 0), ScrollViewer)
+                _scrollViewer.ScrollToBottom()
+            End If
+        Catch ex As Exception
+        End Try
     End Sub
 
     ''' <summary>
@@ -74,6 +83,10 @@ Public Class ServerDownHostControl
     Public Sub InitializeHost()
         StartLogTimer()
         StartSaveTimer()
+        StartHost()
+    End Sub
+
+    Public Sub StartHost()
         If sh Is Nothing Or sh?.State = CommunicationState.Closed Then
             sh = New ServiceHost(serviceType:=GetType(GetLog))
             sh.Open()
@@ -87,6 +100,10 @@ Public Class ServerDownHostControl
     Public Sub CloseHost()
         StopLogTimer()
         StopSaveTimer()
+        StopHost()
+    End Sub
+
+    Public Sub StopHost()
         Try
             sh.Close()
             views.ForEach(Sub(view) UpdateView(view, stringServiceStopped))
@@ -111,9 +128,11 @@ Public Class ServerDownHostControl
     Public Sub SetLogOn()
         If isLogEnabled = False Then
             Try
-                StartLog()
+                StartLogTimer()
+                isLogEnabled = True
             Catch ex As Exception
                 Console.WriteLine(ex.StackTrace)
+                isLogEnabled = False
             End Try
         End If
     End Sub
@@ -124,47 +143,13 @@ Public Class ServerDownHostControl
     Public Sub SetLogOff()
         If isLogEnabled Then
             Try
-                EndLog()
+                StopLogTimer()
+                isLogEnabled = False
             Catch ex As Exception
                 Console.WriteLine(ex.StackTrace)
+                isLogEnabled = True
             End Try
         End If
-    End Sub
-#End Region
-#Region "StartLogEndLog"
-    ''' <summary>
-    ''' Starts the logging process.
-    ''' </summary>
-    ''' <param name="isConsole"></param>
-    Public Sub StartLog(Optional ByVal isConsole As Boolean = False)
-        If isConsole Then
-#Region "isConsole = True"
-            Throw New NotImplementedException("isConsole = True")
-            'Dim reply As String
-            'Console.WriteLine("Do you want to start a test? Y/N")
-            'reply = Console.ReadLine()
-            'If reply.ToLower().First().Equals("y") Or reply.ToLower().First().Equals("j") Then
-            '    TestServers()
-            'ElseIf reply.ToLower().First().Equals("n") Then
-            '    Console.WriteLine("Test aborted.")
-            '    Console.ReadKey()
-            '    Throw New Exception("Test aborted.")
-            'Else
-            '    Console.WriteLine("Invalid reply.")
-            '    Console.ReadKey()
-            '    Throw New Exception("Invalid reply.")
-            'End If
-#End Region
-        Else
-            StartLogTimer()
-        End If
-    End Sub
-
-    ''' <summary>
-    ''' Stops the logging process.
-    ''' </summary>
-    Public Sub EndLog()
-        StopLogTimer()
     End Sub
 #End Region
 #Region "Update"
@@ -177,11 +162,11 @@ Public Class ServerDownHostControl
         views.ForEach(Sub(view) view.Dispatch(Threading.DispatcherPriority.Send, Sub() UpdateListBox(view)))
     End Sub
 
-    Private Sub UpdateView(ByRef view As MainWindow)
+    Private Sub UpdateView(ByRef view As IView)
         view.SetStatusMessage(statusMessage)
     End Sub
 
-    Private Sub UpdateView(ByRef view As MainWindow, ByVal message As String)
+    Private Sub UpdateView(ByRef view As IView, ByVal message As String)
         view.SetStatusMessage(message)
     End Sub
 #End Region
@@ -199,8 +184,8 @@ Public Class ServerDownHostControl
         Catch ex As Exception
             statusMessage = stringLogFileSaveFailure
             views.ForEach(Sub(view) view.Dispatch(Threading.DispatcherPriority.Background, Sub()
-                                                                                               UpdateView(view)
-                                                                                               view.ShowErrorMessage(stringLogFileSaveFailure, ServerDownClassLibrary.EErrorLevel.Warning)
+                                                                                            UpdateView(view)
+                                                                                            view.ShowErrorMessage(stringLogFileSaveFailure, EErrorLevel.Warning)
                                                                                            End Sub))
         Finally
             sw.Close()
@@ -256,9 +241,9 @@ Public Class ServerDownHostControl
     ''' Updates the view's listBox.
     ''' </summary>
     ''' <param name="view"></param>
-    Private Sub UpdateListBox(view As MainWindow)
+    Private Sub UpdateListBox(view As IView)
         logText.ForEach(Sub(item) view.AddLogItem(item))
-        UpdateListBoxPosition(view.listBoxLog)
+        UpdateListBoxPosition(view)
         view.SetStatusMessage(stringNewReportText & Date.UtcNow.ToLocalTime().ToString())
     End Sub
 #End Region

@@ -1,17 +1,9 @@
 ﻿Imports ServerDownClassLibrary
 
-Class MainWindow
+Partial Class MainWindow
     Implements IView
 #Region "Declaration"
     Private control As ServerDownHostControl = Nothing
-    'Public Property StatusMessage() As String
-    '    Get
-    '        Return statusBarItemMessage.Content
-    '    End Get
-    '    Set(value As String)
-    '        statusBarItemMessage.Content = value
-    '    End Set
-    'End Property
     Private viewList As IViewList = Nothing
 #End Region
 #Region "Initialization"
@@ -37,14 +29,6 @@ Class MainWindow
     Public Sub ClearList() Implements IView.ClearList
         listBoxLog.Items.Clear()
     End Sub
-
-    'Public Sub ToggleLogging() Implements IView.ToggleLogging
-    '    If checkBoxLog.IsChecked Then
-    '        checkBoxLog.IsChecked = False
-    '    Else
-    '        checkBoxLog.IsChecked = True
-    '    End If
-    'End Sub
 
     Public Sub ShowErrorMessage(message As String, Optional errorlevel As EErrorLevel = EErrorLevel.None) Implements IView.ShowErrorMessage
         Select Case errorlevel
@@ -74,41 +58,20 @@ Class MainWindow
     End Sub
 
     Public Function GetStatusLogList() As IViewList Implements IView.GetStatusLogList
-        Return listBoxLog
+        Return viewList
     End Function
 #End Region
 #Region "Events"
-    Private Sub buttonStart_Click(sender As Object, e As RoutedEventArgs) Handles buttonStart.Click
-        control.InitializeHost()
-    End Sub
+    'Private Sub buttonStart_Click(sender As Object, e As RoutedEventArgs) Handles buttonStart.Click
+    '    control.InitializeHost()
+    'End Sub
 
-    Private Sub buttonStop_Click(sender As Object, e As RoutedEventArgs) Handles buttonStop.Click
-        control.CloseHost()
-    End Sub
+    'Private Sub buttonStop_Click(sender As Object, e As RoutedEventArgs) Handles buttonStop.Click
+    '    control.CloseHost()
+    'End Sub
 
     Private Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
         SetControl()
     End Sub
-
-    'Private Sub checkBoxLog_Checked(sender As Object, e As RoutedEventArgs) Handles checkBoxLog.Checked
-    '    control.SetLogOn()
-    'End Sub
-
-    'Private Sub checkBoxLog_Unchecked(sender As Object, e As RoutedEventArgs) Handles checkBoxLog.Unchecked
-    '    control.SetLogOff()
-    'End Sub
-
-    'Private Sub checkBoxSaveTest_Checked(sender As Object, e As RoutedEventArgs) Handles checkBoxSave.Checked
-    '    control.StartSaveTimer()
-    'End Sub
-
-    'Private Sub checkBoxSaveTest_Unchecked(sender As Object, e As RoutedEventArgs) Handles checkBoxSave.Unchecked
-    '    control.StopSaveTimer()
-    'End Sub
-
-    'Private Sub buttonNewWindow_Click(sender As Object, e As RoutedEventArgs) Handles buttonNewWindow.Click
-    '    Dim testW As New MainWindow()
-    '    testW.Show()
-    'End Sub
 #End Region
 End Class

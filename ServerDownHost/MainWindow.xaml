@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ServerDownHost"
         mc:Ignorable="d"
-        Title="ServerDown Host" Height="350" Width="660" MinHeight="350" MinWidth="425" Icon="Resources/019.ico" Loaded="Window_Loaded">
+        Title="ServerDown Host" Height="350" Width="660" MinHeight="350" MinWidth="425" Icon="Resources/netdrive_unav.png" Loaded="Window_Loaded">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
