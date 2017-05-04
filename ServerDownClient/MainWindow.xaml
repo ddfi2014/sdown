@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ServerDownClient"
         mc:Ignorable="d"
-        Title="ServerDown Client" Height="350" Width="600" MinHeight="250" MinWidth="350" Icon="Resources/down_n.png" Loaded="Window_Loaded" Closing="Window_Closing">
+        Title="ServerDown Client" Height="350" Width="600" MinHeight="250" MinWidth="350" Icon="Resources/netdrive_unav.png" Loaded="Window_Loaded" Closing="Window_Closing">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="20"/>
@@ -27,10 +27,10 @@
             <ListBox x:Name="listBoxLog" Margin="10"/>
             <StackPanel Grid.Column="1">
                 <Button x:Name="buttonSaveLog" Margin="10,10,10,5" Cursor="Hand">
-                    <Image Source="Resources/save-icon-5404.png" Margin="5"/>
+                    <Image Source="Resources/save2.png" Margin="5"/>
                 </Button>
                 <Button x:Name="buttonMailLog" Margin="10,5,10,5" Cursor="Hand">
-                    <Image Source="Resources/email-icon-126.png"/>
+                    <Image Source="Resources/mail2.png"/>
                 </Button>
             </StackPanel>
         </Grid>

@@ -10,7 +10,7 @@ Public Class ServerDownClientControl
     Private serverLog As String()
     Private fullLog As New List(Of String)()
     Private timer As Timer
-    Private Const interval As Double = 1000 * 1 * 15
+    Private Const interval As Double = 1000 * 1 * 10
     Private Const stringSaveDialogFilter As String = "Textdateien (*.txt, *.log)|*.txt;*.log|Alle Dateien (*.*)|*.*"
     Private Const stringLogSaved As String = "Log saved as: "
     Private Const stringLogNotSaved As String = "Log could not be saved."
@@ -60,9 +60,8 @@ Public Class ServerDownClientControl
             Dim listBox As ListBox = view.GetStatusLogList().GetList()
             If listBox IsNot Nothing Then
                 Dim _border = TryCast(VisualTreeHelper.GetChild(listBox, 0), Border)
-                'Dim _scrollViewer = TryCast(VisualTreeHelper.GetChild(_border, 0), ScrollViewer)
-                '_scrollViewer.ScrollToBottom()
-                TryCast(VisualTreeHelper.GetChild(_border, 0), ScrollViewer).ScrollToBottom()
+                Dim _scrollViewer = TryCast(VisualTreeHelper.GetChild(_border, 0), ScrollViewer)
+                _scrollViewer.ScrollToBottom()
             End If
         Catch ex As Exception
 
@@ -80,7 +79,6 @@ Public Class ServerDownClientControl
         Catch ex As Exception
             Console.WriteLine(ex.StackTrace)
             clientView.Dispatch(Threading.DispatcherPriority.Background, Sub()
-                                                                             'clientView.AddLogItem(Date.UtcNow.ToString() & " " & stringServerNotConnected)
                                                                              clientView.AddLogItem(LocalDateTimeString & " " & stringServerNotConnected)
                                                                              UpdateListBoxPosition(clientView)
                                                                          End Sub)
